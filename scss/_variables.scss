@@ -1,0 +1,17 @@
+:root {
+    --color-wolfpack-black: #000;
+    --color-wolfpack-white: #fff;
+    --color-wolfpack-red: #c00;
+    --color-reynolds-red: #900;
+    --color-pyroman-flame: #d14905;
+    --color-hunt-yellow: #fac800;
+    --color-geonomic-green: #6f7d1c;
+    --color-carmichael-aqua: #008473;
+    --color-innovation-blue: #427e93;
+    --color-bio-indigo: #4156a1;
+
+    --color-background: var(--color-wolfpack-white);
+    --color-foreground: var(--color-wolfpack-black);
+    --color-accent: var(--color-wolfpack-red);
+    --color-accent-alt: var(--color-reynolds-red);
+}
