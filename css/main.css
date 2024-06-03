@@ -27,6 +27,9 @@ html, body {
 .navbar {
   background-color: var(--color-wolfpack-white);
   color: var(--color-wolfpack-black);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .nav-link {
