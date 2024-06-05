@@ -36,6 +36,14 @@ html, body {
   color: var(--color-wolfpack-black);
 }
 
+.navbar-toggler:not(.collapsed) {
+  transition: 250ms;
+  rotate: 90deg;
+}
+.navbar-toggler:not(.collapsed).collapsed {
+  rotate: 0deg;
+}
+
 .splash {
   width: 100%;
   height: calc(100vh - 58.6666666667px);
