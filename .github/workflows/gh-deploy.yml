@@ -22,7 +22,7 @@ jobs:
             - name: Check out repo
               uses: actions/checkout@v4
               with:
-                ref: 'gh-pages'
+                ref: 'main'
             - name: Use Node
               uses: actions/setup-node@v4
               with:
@@ -34,7 +34,9 @@ jobs:
             - name: Mirror from main
               run: |
                 git status
-                git merge --no-ff --verbose --progress -m "Deploy from main" origin/main
+                git checkout gh-pages
+                git merge --no-ff --verbose --progress -m "Deploy from main" origin/gh-pages
+                git switch gh-pages
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
