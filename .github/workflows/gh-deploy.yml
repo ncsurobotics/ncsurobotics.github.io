@@ -30,7 +30,7 @@ jobs:
               run: |
                 echo Beginning CSS compilation!
                 mkdir ./css
-                sass --n-source-map --update scss:css
+                sass --no-source-map --update scss:css
 
             # Clean up repository
             - name: Clean repo
