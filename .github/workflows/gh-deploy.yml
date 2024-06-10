@@ -34,7 +34,7 @@ jobs:
             - name: Mirror from main
               run: |
                 git status
-                git merge --no-ff --verbose --progress -m "Deploy from main" main
+                git merge --no-ff --verbose --progress -m "Deploy from main" origin/main
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
