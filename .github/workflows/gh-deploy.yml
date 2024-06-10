@@ -33,6 +33,7 @@ jobs:
             # Mirror the repo from main
             - name: Mirror from main
               run: |
+                git status
                 git merge main
 
             # Compile the SCSS files into CSS
@@ -46,7 +47,7 @@ jobs:
             - name: Clean repo
               run: |
                 echo Cleaning repository!
-                rm -rf ./scss
+                # rm -rf ./scss
 
             - name: Commit and push update
               run: |-
