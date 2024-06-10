@@ -22,7 +22,6 @@ jobs:
             - name: Check out repo
               uses: actions/checkout@v4
               with:
-                ref: 'main'
                 token: ${{ secrets.DEPLOY_TOKEN }}
             - name: Use Node
               uses: actions/setup-node@v4
