@@ -34,7 +34,7 @@ jobs:
             - name: Mirror from main
               run: |
                 git status
-                git merge main
+                git merge --squash --verbose --progress -m "Deploy from main" main
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
@@ -48,14 +48,6 @@ jobs:
               run: |
                 echo Cleaning repository!
                 # rm -rf ./scss
-
-            - name: Commit and push update
-              run: |-
-                git config --global user.email "bot@noreply.github.com"
-                git config --global user.name ""
-                git add -A
-                git merge --squash -m "Deploy from main" main
-                git push
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@v4
               with:
