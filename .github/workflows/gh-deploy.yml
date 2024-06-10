@@ -11,19 +11,29 @@ on:
     # Allows running this workflow manually from the Actions tab
     workflow_dispatch:
 
+permissions:
+    contents: write
+
 jobs:
     deploy:
         if: ${{ github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch' }}
         runs-on: ubuntu-latest
         steps:
             - name: Check out repo
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
+              with:
+                ref: 'gh-pages'
             - name: Use Node
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v4
               with:
                 node-vesion: '14.x'
             - name: Install node dependencies
               run: npm install -g sass
+
+            # Mirror the repo from main
+            - name: Mirror from main
+              run: |
+                git merge main
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
@@ -36,11 +46,17 @@ jobs:
             - name: Clean repo
               run: |
                 echo Cleaning repository!
+                rm -rf ./scss
 
             - name: Commit and push update
               run: |-
-                git config --global user.email "aphelper@actions.com"
-                git config --global user.name "AquaPack Helper"
+                git config --global user.email "bot@noreply.github.com"
+                git config --global user.name ""
                 git add -A
-                git commit -m "Deploy from main"
+                git merge --squash -m "Deploy from main" main
                 git push
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                folder: .
+                branch: gh-pages
