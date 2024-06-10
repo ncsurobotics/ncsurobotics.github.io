@@ -1,21 +1,46 @@
-name: GitHub Pages Deploy
+name: deploy-to-pages-branch
 
 on:
+    # Runs this workflow when a pull-request to main is merged
+    pull_request:
+        types:
+            - closed
+        branches:
+            -'main'
+
     # Allows running this workflow manually from the Actions tab
     workflow_dispatch:
 
 jobs:
     deploy:
+        if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - name: Check out repo
+              uses: actions/checkout@v2
+            - name: Use Node
+              uses: actions/setup-node@v2
+              with:
+                node-vesion: '14.x'
+            - name: Install node dependencies
+              run: npm install -g sass
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
               run: |
                 echo Beginning CSS compilation!
+                mkdir ./css
+                sass --n-source-map --update scss:css
 
             # Clean up repository
             - name: Clean repo
               run: |
                 echo Cleaning repository!
+
+            - name: Commit and push update
+              run: |-
+                git config --global user.email "aphelper@actions.com"
+                git config --global user.name "AquaPack Helper"
+                git add -A
+                git commit -m "Deploy from main"
+                git push
