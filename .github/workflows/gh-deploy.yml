@@ -1,4 +1,4 @@
-name: deploy-to-pages-branch
+name: site-deploy
 
 on:
     # Runs this workflow when a pull-request to main is merged
@@ -49,7 +49,10 @@ jobs:
             - name: Clean repo
               run: |
                 echo Cleaning repository!
-                # rm -rf ./scss
+                rm -rf ./scss
+                rm -rf ./scripts
+
+            # Deploy Site
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@v4
               with:
