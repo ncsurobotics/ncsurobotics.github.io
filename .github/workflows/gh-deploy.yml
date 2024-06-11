@@ -30,13 +30,13 @@ jobs:
               run: npm install -g sass
 
             # Mirror the repo from main
-            - name: Merge main -> gh-pages
-              uses: devmasx/merge-branch@master
-              with:
-                type: now
-                from_branch: main
-                target_branch: gh-pages
-                github_token: ${{ secrets.GITHUB_TOKEN}}
+            #- name: Merge main -> gh-pages
+            #  uses: devmasx/merge-branch@master
+            #  with:
+            #    type: now
+            #    from_branch: main
+            #    target_branch: gh-pages
+            #    github_token: ${{ secrets.GITHUB_TOKEN}}
 
             # Compile the SCSS files into CSS
             - name: Compile CSS
