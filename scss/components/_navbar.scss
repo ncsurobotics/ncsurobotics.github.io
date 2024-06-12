@@ -11,12 +11,3 @@
     color: var(--color-wolfpack-black);
 }
 
-.navbar-toggler:not(.collapsed) {
-    transition: 250ms;
-    rotate: 90deg;
-
-    &.collapsed {
-        rotate: 0deg;
-    }
-}
-
