@@ -1,198 +1,349 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>AquaPack Robotics - You can bring a wolf to water, but it is harder to
-      make it a fully autonomous underwater vehicle</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <title>
+            AquaPack Robotics - You can bring a wolf to water, but it is harder
+            to make it a fully autonomous underwater vehicle
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- NC State Bootstrap CSS -->
-    <link href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet" />
-    <!--Primary, sitewide stylesheet-->
-    <link rel="stylesheet" href="./css/main.css"/>
-    <!--Page specific stylesheet-->
-    <link rel="stylesheet" href="./css/home.css"/>
+        <!-- Optional Javascript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.ncsu.edu/brand-assets/bootstrap-4/js/bootstrap.min.js"></script>
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/fc11a7033a.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Optional Javascript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://cdn.ncsu.edu/brand-assets/bootstrap-4/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand navbar-active" href="#">
-        <span class="sr-only">(current)</span>
-        <img src="./img/aquapack-icon-profile.svg" width="40" height="40"
-          alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><img src="./img/caret.svg" width="20" height="20" style="margin: auto;"></span>
-      </button>
-
-      <div class="collapse navbar-collapse navbar-light" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Us
+        <!-- NC State Bootstrap CSS -->
+        <link
+            href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!--Primary, sitewide stylesheet-->
+        <link rel="stylesheet" href="./css/main.css" />
+        <!--Page specific stylesheet-->
+        <link rel="stylesheet" href="./css/home.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand navbar-active" href="#">
+                <span class="sr-only">(current)</span>
+                <img
+                    src="./img/aquapack-icon-profile.svg"
+                    width="40"
+                    height="40"
+                    alt=""
+                />
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./html/about/overview.html">Get to know us</a>
-              <a class="dropdown-item" href="./html/about/members.html">Meet the Team</a>
-              <a class="dropdown-item" href="./html/about/robosub.html">RoboSub</a>
-              <a class="dropdown-item" href="./html/about/disciplines.html">Disciplines</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Documentation
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://github.com/ncsurobotics">GitHub</a>
-              <a class="dropdown-item" href="https://ncsurobotics.github.io">Wiki</a>
-              <a class="dropdown-item" href="./html/documentation/tdr.html">Technical Design Report</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/seawolves.html">Past SeaWolves</a>
-          </li>
-          <li class="nav-item dropdown">
-            <!--NCSU Bootstrap NavBar doesn't allow the "face" link of a
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-light" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            About Us
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a
+                                class="dropdown-item"
+                                href="./html/about/overview.html"
+                                >Get to know us</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                href="./html/about/members.html"
+                                >Meet the Team</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                href="./html/about/robosub.html"
+                                >RoboSub</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                href="./html/about/disciplines.html"
+                                >Disciplines</a
+                            >
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Documentation
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a
+                                class="dropdown-item"
+                                href="https://github.com/ncsurobotics"
+                                >GitHub</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                href="https://ncsurobotics.github.io"
+                                >Wiki</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                href="./html/documentation/tdr.html"
+                                >Technical Design Report</a
+                            >
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/seawolves.html"
+                            >Past SeaWolves</a
+                        >
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!--NCSU Bootstrap NavBar doesn't allow the "face" link of a
             dropdown to be followed, thus this is just a placeholder-->
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Outreach Programs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./html/outreach/industry-partners.html">Industry Partners Program</a>
-              <a class="dropdown-item" href="./html/404.html">Community Outreach</a>
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Outreach Programs
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a
+                                class="dropdown-item"
+                                href="./html/outreach/industry-partners.html"
+                                >Industry Partners Program</a
+                            >
+                            <a class="dropdown-item" href="./html/404.html"
+                                >Community Outreach</a
+                            >
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/404.html">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/404.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Sponsors &amp; Donors
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a
+                                class="dropdown-item"
+                                href="./html/donors/tiers.html"
+                                >Sponsorship Tiers</a
+                            >
+                            <a class="dropdown-item" href="./html/404.html"
+                                >Current Sponsors</a
+                            >
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/404.html">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/404.html">Blog</a>
-
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sponsors &amp; Donors
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./html/donors/tiers.html">Sponsorship Tiers</a>
-              <a class="dropdown-item" href="./html/404.html">Current Sponsors</a>
+        </nav>
+        <header class="splash" id="splash-homepage">
+            <div class="splash" id="glass-panel">
+                <img
+                    src="./img/aquapack_main_logo.png"
+                    height="500"
+                    id="logo"
+                />
+                <h1>Learn, Design, Build</h1>
             </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header class="splash" id="splash-homepage">
-      <img src="./img/aquapack_main_logo.png" height="500" id="logo">
-      <h1>Learn, Design, Build</h1>
-    </header>
-    <div class="content" id="overview">
-      <div class="subteams">
-        <div class="team" id="mechanical">
-          <img src="./img/tools.svg" class="team-icon">
-          <h1 class="team-heading">Mechanical</h1>
-          <p>Design and manufacturing of robot physical components</p>
+        </header>
+        <div class="content" id="overview">
+            <div class="subteams">
+                <div class="team" id="mechanical">
+                    <i class="fa-solid fa-wrench fa-2xl team-icon"></i>
+                    <h1 class="team-heading">Mechanical</h1>
+                    <p>Design and manufacturing of robot physical components</p>
+                </div>
+                <div class="team" id="electrical">
+                    <i class="fa-solid fa-bolt fa-2xl team-icon"></i>
+                    <h1 class="team-heading">Electrical</h1>
+                    <p>Design and wiring of robot circuitry</p>
+                </div>
+                <div class="team" id="software">
+                    <i class="fa-solid fa-code fa-2xl team-icon"></i>
+                    <h1 class="team-heading">Software</h1>
+                    <p>Design and development of system logic</p>
+                </div>
+                <div class="team" id="business">
+                    <i class="fa-solid fa-briefcase fa-2xl team-icon"></i>
+                    <h1 class="team-heading">Business</h1>
+                    <p>
+                        Public relations, financial management, and company
+                        relations.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="team" id="electrical">
-          <img src="./img/lightning.svg" class="team-icon">
-          <h1 class="team-heading">Electrical</h1>
-          <p>Design and wiring of robot circuitry</p>
+        <div class="content text-box" id="about">
+            <p>
+                We build autonomous underwater vehicles! We are a team that
+                consists of many disciplines all striving to run a successful
+                organization and build a competitive robot.
+            </p>
+            <p>
+                We are a student-led 501(c)(3) organization that is always open
+                to new members from any major. Our team works outside the
+                classroom to not only build a competitive robot, also to improve
+                each other's technical skills and spread the passion of robotics
+                throughout the community. Our robot, SeaWolf, competes in the
+                RobotSub competition annually. You can learn more about RoboSub
+                <a href="">here</a>.
+            </p>
         </div>
-        <div class="team" id="software">
-          <img src="./img/laptop.svg" class="team-icon">
-          <h1 class="team-heading">Software</h1>
-          <p>Design and development of system logic</p>
+        <div class="content" id="hours">
+            <div class="content textbox">
+                <h1>Hours Spent Engineering</h1>
+                <p>
+                    We pride ourselves in working hard to develop a functional
+                    and robust system. Our team of engineers has over 4000 hours
+                    alone in the 2022-2023 academic school year. Often, hours
+                    per team are performed concurrently.
+                </p>
+            </div>
+            <ul class="bar-chart">
+                <li>
+                    <h1>Total Recorded Hours</h1>
+                    <p>
+                        <span
+                            class="bar"
+                            id="total-hours"
+                            style="width: 80%"
+                        ></span>
+                        4000+ hours
+                    </p>
+                </li>
+                <li>
+                    <h1>Mechanical</h1>
+                    <p>
+                        <!-- I've created bars this way because it seemed easiest at the time. I have no clue whether or not this is a proper way to do this. The width value is calculated as a percentage of 80% "total" hours -->
+                        <span class="bar" style="width: 40%"></span>
+                        2000 hours
+                    </p>
+                </li>
+                <li>
+                    <h1>Electrical</h1>
+                    <p>
+                        <span class="bar" style="width: 50%"></span>
+                        2500 hours
+                    </p>
+                </li>
+                <li>
+                    <h1>Software</h1>
+                    <p>
+                        <span class="bar" style="width: 34%"></span>
+                        1700 hours
+                    </p>
+                </li>
+            </ul>
         </div>
-        <div class="team" id="business">
-          <img src="./img/briefcase.svg" class="team-icon">
-          <h1 class="team-heading">Business</h1>
-          <p>Public relations, financial management, and company relations.</p>
+        <div class="content callout" id="attention">
+            <h1>
+                <i class="fa-solid fa-people-group fa-10x"></i> Get Involved!
+            </h1>
+            <p>
+                If any information you have seen so far interests you, we would
+                be happy for you to <a href="">join our team!</a>
+            </p>
         </div>
-      </div>
-    </div>
-    <div class="content text-box" id="about">
-      <p>We build autonomous underwater vehicles! We are a team that consists
-        of many disciplines all striving to run a successful organization and
-        build a competitive robot.
-      </p>
-      <p>We are a student-led 501(c)(3) organization that is always open to new
-        members from any major. Our team works outside the classroom to not only
-        build a competitive robot, also to improve each other's technical
-        skills and spread the passion of robotics throughout the community.
-        Our robot, SeaWolf, competes in the RobotSub competition annually. You
-        can learn more about RoboSub <a href="">here</a>.
-      </p>
-    </div>
-    <div class="content" id="hours">
-      <div class="content textbox">
-        <h1>Hours Spent Engineering</h1>
-        <p>We pride ourselves in working hard to develop a functional and robust
-          system. Our team of engineers has over 4000 hours alone in the
-          2022-2023 academic school year. Often, hours per team are performed
-          concurrently.</p>
-      </div>
-      <ul class="bar-chart">
-        <li>
-          <h1>Total Recorded Hours</h1>
-          <p>
-            <span class="bar" id="total-hours" style="width: 80%"></span>
-            4000+ hours
-          </p>
-        </li>
-        <li>
-          <h1>Mechanical</h1>
-          <p>
-            <span class="bar" style="width: 40%"></span>
-          2000 hours
-          </p>
-        </li>
-        <li>
-          <h1>Electrical</h1>
-          <p>
-            <span class="bar" style="width: 50%"></span>
-            2500 hours
-          </p>
-        </li>
-        <li>
-          <h1>Software</h1>
-          <p>
-            <span class="bar" style="width: 34%"></span>
-            1700 hours
-          </p>
-         </li>
-      </ul>
-    </div>
-    <div class="content callout" id="attention">
-      <h1><img src="./img/group.svg" width="50" height="50" alt=""> Get Involved!</h1>
-      <p>If any information you have seen so far interests you, we would be
-        happy for you to <a href="">join our team!</a></p>
-    </div>
-    <div class="blog-spotlight">
-
-    </div>
-    <footer>
-      <div class="footer-content">
-        <h1>What we do</h1>
-        <p>We are AquaPack Robotics, a student led organization.</p>
-        <p>We build underwater autonomous vehicles to compete in RoboSub.</p>
-        <p>Our technical expertise primarily focuses on electrical and computer
-          engineering, computer science, mechanical engineering, and business.</p>
-      </div>
-      <div class="footer-content">
-        <h1>Contact Us</h1>
-        <address>1034 Engineering Building 2, Raleigh, NC 27606</address><br>
-        <email>aquapack@aquapackrobotics.org</email><br>
-        <a href="https://aquapackrobotics.org">https://aquapackrobotics.org</a>
-      </div>
-      <div class="footer-content">
-        <h1>Latest Posts</h1>
-      </div>
-    </footer>
-  </body>
+        <div class="blog-spotlight"></div>
+        <footer>
+            <div class="footer-content">
+                <h1>What we do</h1>
+                <p>We are AquaPack Robotics, a student led organization.</p>
+                <p>
+                    We build underwater autonomous vehicles to compete in
+                    RoboSub.
+                </p>
+                <p>
+                    Our technical expertise primarily focuses on electrical and
+                    computer engineering, computer science, mechanical
+                    engineering, and business.
+                </p>
+            </div>
+            <div class="footer-content">
+                <h1>Contact Us</h1>
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address>
+                        1034 Engineering Building 2, Raleigh, NC 27606
+                    </address>
+                    <br />
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <email>aquapack@aquapackrobotics.org</email><br />
+                </span>
+                <span>
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="https://aquapackrobotics.org"
+                        >https://aquapackrobotics.org</a
+                    >
+                </span>
+            </div>
+            <div class="footer-content">
+                <h1>Latest Posts</h1>
+            </div>
+        </footer>
+    </body>
 </html>

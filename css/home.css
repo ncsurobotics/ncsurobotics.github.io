@@ -1,7 +1,18 @@
 #splash-homepage {
-  background-image: url("../img/sw8.jpg");
-  background-position: top 50% left 50%;
-  background-size: 100% auto;
+  background: url("../img/sw8_robosub23.jpg") no-repeat center center scroll;
+  background-size: cover;
+}
+
+#glass-panel {
+  --webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgba(228, 228, 228, 0.1);
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 #logo {

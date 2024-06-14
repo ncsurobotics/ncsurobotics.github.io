@@ -30,18 +30,16 @@ html, body {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .nav-link {
   color: var(--color-wolfpack-black);
 }
 
-.navbar-toggler:not(.collapsed) {
-  transition: 250ms;
-  rotate: 90deg;
-}
-.navbar-toggler:not(.collapsed).collapsed {
-  rotate: 0deg;
+.navbar-brand {
+  color: var(--color-wolfpack-black);
+  font-size: 12pt;
 }
 
 .splash {
@@ -66,12 +64,18 @@ footer {
   padding: 10px 50px;
   height: auto;
   min-height: 80%;
-  display: grid;
-  grid-template-columns: [about] 1fr [contact] 1fr [posts] 1fr;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
   color: white;
   background-color: rgb(26, 26, 26);
   border-top: 1px solid rgba(255, 255, 255, 0.1333333333);
   text-align: left;
+}
+
+.footer-content {
+  padding: 10px 20px;
+  width: 500px;
 }
 
 .callout {
@@ -79,6 +83,10 @@ footer {
   height: fit-content;
   padding: 10px 20px;
   text-align: left;
+}
+.callout h1 {
+  font-size: 28pt;
+  vertical-align: text-center;
 }
 .callout :not(h1) {
   font-size: 14pt;
