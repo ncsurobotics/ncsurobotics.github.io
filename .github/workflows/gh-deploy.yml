@@ -1,52 +1,53 @@
-name: site-deploy
+name: push-to-live-branch
 
 on:
-    # Runs this workflow when a pull-request to main is merged
-    pull_request:
-        types:
-            - closed
-        branches:
-            -'main'
+  # Runs this workflow when a pull-request to main is merged
+  pull_request:
+    types:
+      - closed
+    branches: [main]
 
-    # Allows running this workflow manually from the Actions tab
-    workflow_dispatch:
+  push:
+    branches: [main]
+  # Allows running this workflow manually from the Actions tab
+  workflow_dispatch:
 
 permissions:
-    contents: write
+  contents: write
 
 jobs:
-    deploy:
-        if: ${{ github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch' }}
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@master
+  deploy:
+    if: ${{ github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
 
-            - name: Use Node
-              uses: actions/setup-node@master
-              with:
-                node-version: '14.x'
+      - name: Use Node
+        uses: actions/setup-node@master
+        with:
+          node-version: "14.x"
 
-            - name: Install node dependencies
-              run: npm install -g sass
+      - name: Install node dependencies
+        run: npm install -g sass
 
-            # Compile the SCSS files into CSS
-            - name: Compile CSS
-              run: |
-                echo Beginning CSS compilation!
-                mkdir ./css
-                sass --no-source-map --update scss:css
+      # Compile the SCSS files into CSS
+      - name: Compile CSS
+        run: |
+          echo Beginning CSS compilation!
+          mkdir ./css
+          sass --no-source-map --update scss:css
 
-            # Clean up repository
-            - name: Clean repo
-              run: |
-                echo Cleaning repository!
-                rm -f .gitignore
-                rm -rf ./scss
-                rm -rf ./scripts
+      # Clean up repository
+      - name: Clean repo
+        run: |
+          echo Cleaning repository!
+          rm -f .gitignore
+          rm -rf ./scss
+          rm -rf ./scripts
 
-            # Deploy Site
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                folder: .
-                branch: gh-pages
+      # Deploy Site
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+          branch: gh-pages
