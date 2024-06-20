@@ -1,16 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Page not Found - AquaPack Robotics</title>
+        <title>Blog - AquaPack Robotics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- NC State Bootstrap CSS -->
-        <link
-            href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <!--Primary, sitewide stylesheet-->
-        <link rel="stylesheet" href="../css/main.css" />
 
         <!-- Optional Javascript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,15 +17,28 @@
             crossorigin="anonymous"
         ></script>
         <script src="https://cdn.ncsu.edu/brand-assets/bootstrap-4/js/bootstrap.min.js"></script>
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/fc11a7033a.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- NC State Bootstrap CSS -->
+        <link
+            href="https://cdn.ncsu.edu/brand-assets/bootstrap-4/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!--Primary, sitewide stylesheet-->
+        <link rel="stylesheet" href="../../css/main.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="../../index.html">
                 <img
-                    src="../img/aquapack-icon-profile.svg"
+                    src="../../img/aquapack-icon-profile.svg"
                     width="40"
                     height="40"
-                    alt=""
+                    alt="The logo for AquaPack robotics, a howling wolf riding on top of a submarine"
                 />
                 Home
             </a>
@@ -47,12 +52,8 @@
                 aria-label="Toggle navigation"
             >
                 <span class="navbar-toggler-icon"
-                    ><img
-                        src="../img/caret.svg"
-                        width="20"
-                        height="20"
-                        style="margin: auto"
-                /></span>
+                    ><i class="fa-solid fa-angle-down"></i
+                ></span>
             </button>
 
             <div class="collapse navbar-collapse navbar-light" id="navbarNav">
@@ -74,18 +75,22 @@
                         >
                             <a
                                 class="dropdown-item"
-                                href="./about/overview.html"
+                                href="../about/overview.html"
                                 >Get to know us</a
                             >
-                            <a class="dropdown-item" href="./about/members.html"
+                            <a
+                                class="dropdown-item"
+                                href="../about/members.html"
                                 >Meet the Team</a
                             >
-                            <a class="dropdown-item" href="./about/robosub.html"
+                            <a
+                                class="dropdown-item"
+                                href="../about/robosub.html"
                                 >RoboSub</a
                             >
                             <a
                                 class="dropdown-item"
-                                href="./about/disciplines.html"
+                                href="../about/disciplines.html"
                                 >Disciplines</a
                             >
                         </div>
@@ -117,13 +122,13 @@
                             >
                             <a
                                 class="dropdown-item"
-                                href="./documentation/tdr.html"
+                                href="../documentation/tdr.html"
                                 >Technical Design Report</a
                             >
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./seawolves.html"
+                        <a class="nav-link" href="../seawolves.html"
                             >Past SeaWolves</a
                         >
                     </li>
@@ -144,21 +149,24 @@
                         >
                             <a
                                 class="dropdown-item"
-                                href="./outreach/industry-partners.html"
-                                >Industry Partners Program</a
+                                href="../outreach/industry-partners.html"
                             >
+                                Industry Partners Program
+                            </a>
                             <a
                                 class="dropdown-item"
-                                href="./outreach/community.html"
+                                href="../outreach/community.html"
                                 >Community Outreach</a
                             >
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Calendar</a>
+                        <a class="nav-link" href="../calendar.html">Calendar</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"
+                            >Blog<span class="sr-only">(current)</span></a
+                        >
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -175,12 +183,12 @@
                             class="dropdown-menu"
                             aria-labelledby="navbarDropdown"
                         >
-                            <a class="dropdown-item" href="./donors/tiers.html"
-                                >Sponsorship Tiers</a
+                            <a class="dropdown-item" href="../donors/tiers.html"
+                                >Tier List</a
                             >
                             <a
                                 class="dropdown-item"
-                                href="./donors/sponsors.html"
+                                href="../donors/sponsors.html"
                                 >Current Sponsors</a
                             >
                         </div>
@@ -188,9 +196,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="content">
-            <h1>Oops, this page couldn't be found and returned a 404!</h1>
-        </div>
+
         <footer>
             <div class="footer-content">
                 <h1>What we do</h1>
@@ -207,14 +213,23 @@
             </div>
             <div class="footer-content">
                 <h1>Contact Us</h1>
-                <address>
-                    1034 Engineering Building 2, Raleigh, NC 27606
-                </address>
-                <br />
-                <email>aquapack@aquapackrobotics.org</email><br />
-                <a href="https://aquapackrobotics.org"
-                    >https://aquapackrobotics.org</a
-                >
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address>
+                        1034 Engineering Building 2, Raleigh, NC 27606
+                    </address>
+                    <br />
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <email>aquapack@aquapackrobotics.org</email><br />
+                </span>
+                <span>
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="https://aquapackrobotics.org"
+                        >https://aquapackrobotics.org</a
+                    >
+                </span>
             </div>
             <div class="footer-content">
                 <h1>Latest Posts</h1>

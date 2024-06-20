@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>
-            AquaPack Robotics - You can bring a wolf to water, but it is harder
-            to make it a fully autonomous underwater vehicle
-        </title>
+        <title>Blog - AquaPack Robotics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Optional Javascript -->
@@ -32,20 +29,20 @@
             rel="stylesheet"
         />
         <!--Primary, sitewide stylesheet-->
-        <link rel="stylesheet" href="./css/main.css" />
-        <!--Page specific stylesheet-->
-        <link rel="stylesheet" href="./css/home.css" />
+        <link rel="stylesheet" href="../../../css/main.css" />
+        <!--Blog Post stylesheet -->
+        <link rel="stylesheet" href="../../../css/blog-post.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand navbar-active" href="#">
-                <span class="sr-only">(current)</span>
+            <a class="navbar-brand" href="../../../index.html">
                 <img
-                    src="./img/aquapack-icon-profile.svg"
+                    src="../../../img/aquapack-icon-profile.svg"
                     width="40"
                     height="40"
                     alt="The logo for AquaPack robotics, a howling wolf riding on top of a submarine"
                 />
+                Home
             </a>
             <button
                 class="navbar-toggler"
@@ -56,9 +53,9 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-angle-down"></i>
-                </span>
+                <span class="navbar-toggler-icon"
+                    ><i class="fa-solid fa-angle-down"></i
+                ></span>
             </button>
 
             <div class="collapse navbar-collapse navbar-light" id="navbarNav">
@@ -80,22 +77,22 @@
                         >
                             <a
                                 class="dropdown-item"
-                                href="./html/about/overview.html"
+                                href="../../about/overview.html"
                                 >Get to know us</a
                             >
                             <a
                                 class="dropdown-item"
-                                href="./html/about/members.html"
+                                href="../../about/members.html"
                                 >Meet the Team</a
                             >
                             <a
                                 class="dropdown-item"
-                                href="./html/about/robosub.html"
+                                href="../../about/robosub.html"
                                 >RoboSub</a
                             >
                             <a
                                 class="dropdown-item"
-                                href="./html/about/disciplines.html"
+                                href="../../about/disciplines.html"
                                 >Disciplines</a
                             >
                         </div>
@@ -127,19 +124,17 @@
                             >
                             <a
                                 class="dropdown-item"
-                                href="./html/documentation/tdr.html"
+                                href="../../documentation/tdr.html"
                                 >Technical Design Report</a
                             >
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./html/seawolves.html"
+                        <a class="nav-link" href="../../seawolves.html"
                             >Past SeaWolves</a
                         >
                     </li>
                     <li class="nav-item dropdown">
-                        <!--NCSU Bootstrap NavBar doesn't allow the "face" link of a
-            dropdown to be followed, thus this is just a placeholder-->
                         <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -156,28 +151,31 @@
                         >
                             <a
                                 class="dropdown-item"
-                                href="./html/outreach/industry-partners.html"
-                                >Industry Partners Program</a
+                                href="../../outreach/industry-partners.html"
                             >
-                            <a class="dropdown-item" href="./html/404.html"
+                                Industry Partners Program
+                            </a>
+                            <a
+                                class="dropdown-item"
+                                href="../../outreach/community.html"
                                 >Community Outreach</a
                             >
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./html/calendar.html"
+                        <a class="nav-link" href="../../calendar.html"
                             >Calendar</a
                         >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/blog/blog.html"
-                            >Blog</a
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../blog.html"
+                            >Blog<span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
-                            href="#"
+                            href=""
                             id="navbarDropdown"
                             data-toggle="dropdown"
                             aria-haspopup="true"
@@ -191,10 +189,12 @@
                         >
                             <a
                                 class="dropdown-item"
-                                href="./html/donors/tiers.html"
-                                >Sponsorship Tiers</a
+                                href="../../donors/tiers.html"
+                                >Tier List</a
                             >
-                            <a class="dropdown-item" href="./html/404.html"
+                            <a
+                                class="dropdown-item"
+                                href="../../donors/sponsors.html"
                                 >Current Sponsors</a
                             >
                         </div>
@@ -202,128 +202,92 @@
                 </ul>
             </div>
         </nav>
-        <header class="splash" id="splash-homepage">
-            <div class="splash" id="glass-panel">
-                <img
-                    src="./img/aquapack_main_logo.png"
-                    height="65%"
-                    id="logo"
-                />
-                <h1>Learn, Design, Build</h1>
-            </div>
-        </header>
-        <div class="content" id="overview">
-            <div class="subteams">
-                <div class="team" id="mechanical">
-                    <i class="fa-solid fa-wrench fa-2xl team-icon"></i>
-                    <h1 class="team-heading">Mechanical</h1>
-                    <p>Design and manufacturing of robot physical components</p>
-                </div>
-                <div class="team" id="electrical">
-                    <i class="fa-solid fa-bolt fa-2xl team-icon"></i>
-                    <h1 class="team-heading">Electrical</h1>
-                    <p>Design and wiring of robot circuitry</p>
-                </div>
-                <div class="team" id="software">
-                    <i class="fa-solid fa-code fa-2xl team-icon"></i>
-                    <h1 class="team-heading">Software</h1>
-                    <p>Design and development of system logic</p>
-                </div>
-                <div class="team" id="business">
-                    <i class="fa-solid fa-briefcase fa-2xl team-icon"></i>
-                    <h1 class="team-heading">Business</h1>
-                    <p>
-                        Public relations, financial management, and company
-                        relations.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <!--This isn't the "right" way to do this, but inline styling means I didn't have to recompile-->
-        <div
-            class="content"
-            style="margin: auto; height: fit-content; width: fit-content"
-        >
-            <img
-                src="img/robosub-23-team-photo.jpg"
-                width="100%"
-                style="margin: auto"
-            />
-        </div>
-
-        <div class="content text-box" id="about">
-            <p>
-                We build autonomous underwater vehicles! We are a team that
-                consists of many disciplines all striving to run a successful
-                organization and build a competitive robot.
-            </p>
-            <p>
-                We are a student-led 501(c)(3) organization that is always open
-                to new members from any major. Our team works outside the
-                classroom to not only build a competitive robot, also to improve
-                each other's technical skills and spread the passion of robotics
-                throughout the community. Our robot, SeaWolf, competes in the
-                RobotSub competition annually. You can learn more about RoboSub
-                <a href="">here</a>.
-            </p>
-        </div>
-        <div class="content" id="hours">
-            <div class="content textbox">
-                <h1>Hours Spent Engineering</h1>
-                <p>
-                    We pride ourselves in working hard to develop a functional
-                    and robust system. Our team of engineers has over 4000 hours
-                    alone in the 2022-2023 academic school year. Often, hours
-                    per team are performed concurrently.
+        <article class="content blog-post">
+            <hgroup>
+                <h1>Post Title</h1>
+                <!--Edit the below to match the post time of the current post-->
+                <p id="post-datetime">
+                    Posted on
+                    <time datetime="2024-06-20 13:44">20 June 2024</time>
                 </p>
+            </hgroup>
+            <!--BEGIN POST-->
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <img
+                    src="../img/jelleke-vanooteghem-6NUlOHM40w8-unsplash.jpg"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Fringilla ut morbi tincidunt augue interdum. Ut
+                    porttitor leo a diam sollicitudin tempor. Nullam ac tortor
+                    vitae purus faucibus ornare suspendisse sed. In arcu cursus
+                    euismod quis viverra nibh cras pulvinar. Imperdiet dui
+                    accumsan sit amet nulla. Fermentum iaculis eu non diam
+                    phasellus. Erat velit scelerisque in dictum non consectetur
+                    a. Nunc aliquet bibendum enim facilisis gravida neque.
+                    Porttitor leo a diam sollicitudin tempor. Aliquam eleifend
+                    mi in nulla posuere. Suspendisse ultrices gravida dictum
+                    fusce ut placerat orci. Feugiat in fermentum posuere urna.
+                    Tortor at risus viverra adipiscing at in tellus integer
+                    feugiat. Velit euismod in pellentesque massa placerat duis
+                    ultricies lacus sed. Ridiculus mus mauris vitae ultricies.
+                </p>
+                <p>
+                    Magna eget est lorem ipsum dolor sit amet consectetur.
+                    Mauris cursus mattis molestie a. Est ullamcorper eget nulla
+                    facilisi etiam dignissim diam quis enim. Id ornare arcu odio
+                    ut. Risus feugiat in ante metus dictum at tempor.
+                    Pellentesque eu tincidunt tortor aliquam nulla. At erat
+                    pellentesque adipiscing commodo elit at imperdiet dui.
+                    Faucibus ornare suspendisse sed nisi. Eget egestas purus
+                    viverra accumsan in. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis. Quis vel eros donec ac. Blandit turpis
+                    cursus in hac habitasse platea dictumst quisque sagittis.
+                    Sed id semper risus in hendrerit gravida rutrum. Urna
+                    molestie at elementum eu facilisis sed odio. Vel quam
+                    elementum pulvinar etiam non quam lacus. Nisl vel pretium
+                    lectus quam. Tellus integer feugiat scelerisque varius.
+                    Magna ac placerat vestibulum lectus mauris ultrices eros.
+                    Pellentesque pulvinar pellentesque habitant morbi tristique
+                    senectus et netus. Accumsan lacus vel facilisis volutpat est
+                    velit egestas.
+                </p>
+            </section>
+            <!--END POST-->
+
+            <!--Floating share buttons -->
+            <div class="share-button-container">
+                <h2>Share this post:</h2>
+                <button class="share-button" type="button" id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+                <button class="share-button" type="button" id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </button>
+                <button class="share-button" type="button" id="xtwitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </button>
+                <button class="share-button" type="button" id="mastodon">
+                    <i class="fa-brands fa-mastodon"></i>
+                </button>
+                <button class="share-button" type="button" id="linkshare">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
             </div>
-            <ul class="bar-chart">
-                <li>
-                    <h1>Total Recorded Hours</h1>
-                    <p>
-                        <span
-                            class="bar"
-                            id="total-hours"
-                            style="width: 80%"
-                        ></span>
-                        4000+ hours
-                    </p>
-                </li>
-                <li>
-                    <h1>Mechanical</h1>
-                    <p>
-                        <!-- I've created bars this way because it seemed easiest at the time. I have no clue whether or not this is a proper way to do this. The width value is calculated as a percentage of 80% "total" hours -->
-                        <span class="bar" style="width: 40%"></span>
-                        2000 hours
-                    </p>
-                </li>
-                <li>
-                    <h1>Electrical</h1>
-                    <p>
-                        <span class="bar" style="width: 50%"></span>
-                        2500 hours
-                    </p>
-                </li>
-                <li>
-                    <h1>Software</h1>
-                    <p>
-                        <span class="bar" style="width: 34%"></span>
-                        1700 hours
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="content callout" id="attention">
-            <h1>
-                <i class="fa-solid fa-people-group fa-10x"></i> Get Involved!
-            </h1>
-            <p>
-                If any information you have seen so far interests you, we would
-                be happy for you to <a href="">join our team!</a>
-            </p>
-        </div>
-        <div class="blog-spotlight"></div>
+        </article>
+
         <footer>
             <div class="footer-content">
                 <h1>What we do</h1>
@@ -362,5 +326,8 @@
                 <h1>Latest Posts</h1>
             </div>
         </footer>
+
+        <!--This makes the share buttons work-->
+        <script src="../scripts/share.js"></script>
     </body>
 </html>

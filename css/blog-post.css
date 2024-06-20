@@ -1,0 +1,29 @@
+.share-button {
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  border: none;
+}
+.share-button:hover {
+  filter: brightness(80%);
+}
+
+#email {
+  background: #ef233c;
+}
+
+#linkedin {
+  background: #0a66c2;
+}
+
+#xtwitter {
+  background: #222222;
+}
+
+#mastodon {
+  background: #6364ff;
+}
+
+#linkshare {
+  background: #70e000;
+}
