@@ -16,5 +16,15 @@ document.getElementById("mastodon").onclick = function () {
 };
 
 document.getElementById("linkshare").onclick = function () {
-  alert("Sorry, this button doesn't work yet");
+  let pageURL = window.location.href;
+
+  navigator.clipboard
+    .writeText(pageURL)
+    .then(() => {
+      console.log("Link copied to clipboard");
+      alert("The link to this post was copied to the clipboard");
+    })
+    .catch((error) => {
+      console.error("Error copying link to clipboard", error);
+    });
 };
