@@ -1,31 +1,33 @@
-.share-button {
-    height: 50px;
-    width: 50px;
+@use "./components/sharebutton.scss";
 
-    color: #ffffff;
-    border: none;
-
-    &:hover {
-        filter: brightness(80%);
-    }
+.blog-post {
+    max-width: 60%;
 }
 
-#email {
-    background: #ef233c;
+hgroup > p {
+    font-style: italic;
+    color: rgba(1, 1, 1, 0.65);
 }
 
-#linkedin {
-    background: #0a66c2;
+article > section > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#xtwitter {
-    background: #222222;
+article > section > figure > img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
 }
 
-#mastodon {
-    background: #6364ff;
+figure {
+    display: block;
+    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-#linkshare {
-    background: #70e000;
+figcaption {
+    text-align: center;
+    font-size: 11pt;
 }
