@@ -1,6 +1,16 @@
+let pageURL = window.location.href;
+let postTitle = document.getElementById("post-title").textContent;
+
 document.getElementById("email").onclick = function () {
-  location.href =
-    "mailto:?subject=AquaPack%20Robotics%20-%20PostTitle&body=Check%20out%20this%20blog%20post%20from%20AquaPack%20Robotics!";
+  let href =
+    "mailto:?subject=" +
+    postTitle +
+    "%20-%20AquaPack%20Robotics&body=Check%20out%20this%20blog%20post%20from%20AquaPack%20Robotics!" +
+    "%0A" +
+    "%0A" +
+    pageURL;
+
+  location.href = href;
 };
 
 document.getElementById("linkedin").onclick = function () {
@@ -16,8 +26,6 @@ document.getElementById("mastodon").onclick = function () {
 };
 
 document.getElementById("linkshare").onclick = function () {
-  let pageURL = window.location.href;
-
   navigator.clipboard
     .writeText(pageURL)
     .then(() => {
