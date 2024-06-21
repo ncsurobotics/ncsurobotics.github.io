@@ -3,6 +3,7 @@
   width: 50px;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .share-button:hover {
   filter: brightness(80%);
@@ -26,4 +27,36 @@
 
 #linkshare {
   background: #70e000;
+}
+
+.blog-post {
+  max-width: 60%;
+}
+
+#post-datetime {
+  font-style: italic;
+  color: rgba(1, 1, 1, 0.65);
+}
+
+article > section > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article > section > figure > img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+figure {
+  display: block;
+  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 11pt;
 }
