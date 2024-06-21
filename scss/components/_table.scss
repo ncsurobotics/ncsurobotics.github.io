@@ -1,0 +1,26 @@
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: auto;
+}
+
+th {
+    border-bottom: 2px solid black;
+    font-size: 14pt;
+}
+
+td {
+    max-width: 33.33%;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.cell-text {
+    text-align: left;
+}
+
+.cell-number {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
