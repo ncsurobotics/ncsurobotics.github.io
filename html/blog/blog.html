@@ -30,6 +30,8 @@
         />
         <!--Primary, sitewide stylesheet-->
         <link rel="stylesheet" href="../../css/main.css" />
+        <!--Blog list stylesheet-->
+        <link rel="stylesheet" href="../../css/blog.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
@@ -184,7 +186,7 @@
                             aria-labelledby="navbarDropdown"
                         >
                             <a class="dropdown-item" href="../donors/tiers.html"
-                                >Tier List</a
+                                >Sponsorship Tiers</a
                             >
                             <a
                                 class="dropdown-item"
@@ -199,14 +201,17 @@
         <div class="content">
             <h1>Blog Posts</h1>
             <ul>
-                <li>
-                    <a href="./posts/post-robosub2023.html">
+                <li class="postitem">
+                    <a href="./posts/post-robosub2023.html" class="postcard">
+                        <img src="img/robosub2023-sw8.jpg" />
                         <h2>RoboSub 2023</h2>
                         <p>
                             Posted on
                             <time datetime="2023-10-11 12:00"
                                 >11 October 2023</time
-                            >
+                            ></br>
+                            At the end of July 2023 AquaPack Robotics
+                            represented NC State at the Robosub 20...
                         </p>
                     </a>
                 </li>
@@ -245,9 +250,6 @@
                         >https://aquapackrobotics.org</a
                     >
                 </span>
-            </div>
-            <div class="footer-content">
-                <h1>Latest Posts</h1>
             </div>
         </footer>
     </body>
