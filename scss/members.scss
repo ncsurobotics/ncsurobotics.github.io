@@ -7,7 +7,13 @@
     gap: calc(20px + 10%);
 }
 
+.team-member {
+    min-height: 450px;
+    max-height: 450px;
+}
+
 .member-profile {
+    object-fit: contain;
     margin: 20px auto;
 }
 
