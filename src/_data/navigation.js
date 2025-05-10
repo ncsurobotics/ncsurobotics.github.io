@@ -3,12 +3,6 @@ export default {
     {
       text: 'Members',
       url: '/members/',
-      children: [
-        {
-          text: 'SeaWolves',
-          url: '/seawolves/'
-        }
-      ]
     },
     {
       text: 'SeaWolves',
@@ -21,6 +15,10 @@ export default {
     {
       text: 'Calendar',
       url: '/calendar/'
+    },
+    {
+      text: 'Outreach',
+      url: '/outreach/'
     },
     {
       text: 'Sponsors',
