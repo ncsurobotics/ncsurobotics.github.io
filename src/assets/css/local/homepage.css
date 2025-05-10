@@ -9,14 +9,6 @@
   align-items: center;
 }
 
-#splash-logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 50px;
-  height: 65%
-}
-
 .splash {
   width: 100%;
   height: calc(100vh - calc(40px + 14pt));
@@ -34,6 +26,15 @@
   & h1 {
       color: white;
   }
+}
+
+.splash svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 50px;
+  height: 65%;
+  filter: drop-shadow(3px 5px 3px rgb(0 0 0 / 0.4));
 }
 
 .splash-wrapper {
