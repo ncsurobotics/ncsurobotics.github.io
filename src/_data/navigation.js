@@ -34,5 +34,9 @@ export default {
       text: 'Contact Us',
       url: '/contact/'
     },
+    {
+      text: 'Colophon',
+      url: '/colophon/'
+    }
   ]
 };
