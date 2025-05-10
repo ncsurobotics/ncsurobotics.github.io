@@ -17,6 +17,7 @@ blog:
     </div>
   </header>
   {% include "partials/team-cards.njk" %}
+  <p class="text-center">Learn more about our teams <a href="/disciplines/">here</a></p>
   <div class="full | region">
     <div class="wrapper flow prose">
       <h2>About us</h2>
@@ -30,6 +31,13 @@ blog:
     </div>
   </div>
   {% include "partials/hours.njk" %}
+  {% set itemList = collections.about %}
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Learn more</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
   <section class="full | region">
     <div class="wrapper flow prose">
       <h2>{{ blog.title }}</h2>

@@ -1,9 +1,5 @@
 ---
 title: Get to know us!
-discover:
-  title: Get to know us!
-permalink: /overview/index.html
-layout: page
 ---
 AquaPack Robotics is a student-run 501(c)(3) organization affiliated with [North Carolina State University](https://www.ncsu.edu/). We are always open to new members from any major; all we ask is that they are passionate about robotics.
 

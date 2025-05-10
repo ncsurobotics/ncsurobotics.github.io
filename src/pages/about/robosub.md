@@ -1,9 +1,5 @@
 ---
 title: RoboSub
-discover:
-  title: RoboSub
-permalink: /robosub/index.html
-layout: page
 ---
 RoboSub is an annual competition held typically held in late July - early August. it encompasses schools from around the world, and tasks them with building fully autonomous underwater robots (AUVs). These robots must perform a wide array of tasks, with the themes of said tasks changing annually. The wide variety of tasks includes Gate, Buoy, Path, Bins, Torpedoes, and Octagon. For more information, visit the [RoboSub website](https://robosub.org/).
 
