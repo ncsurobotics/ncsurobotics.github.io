@@ -7,7 +7,7 @@ title: 'Members'
   <div class="region flow">
     <h2>Leadership</h2>
     <div class="grid" data-layout="50-50">
-      {% for member in members | selectattr('leadership') | rejectattr('alum')%}
+      {% asyncEach member in members | selectattr('leadership') | rejectattr('alum')%}
         <custom-card img-square>
           {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
@@ -17,26 +17,26 @@ title: 'Members'
           {% endif %}
           {% if member.teams.length > 0 %}
             <div slot="tag" webc:nokeep>
-              {% for team in member.teams %}
+              {% asyncEach team in member.teams %}
                 <span class="button" data-small-button>{{ team }}</span>
-              {% endfor %}
+              {% endeach %}
             </div>
           {% endif %}
           {% if member.info.length > 0 %}
           	<p slot="content">
-            {% for item in member.info %}
+            {% asyncEach item in member.info %}
               {{ item  }}<br>
-            {% endfor %}
+            {% endeach %}
             </p>
           {% endif %}
         </custom-card>
-      {% endfor %}
+      {% endeach %}
     </div>
   </div>
   <div class="region flow">
     <h2>Members</h2>
     <div class="grid" data-layout="50-50">
-      {% for member in members | rejectattr('leadership') | rejectattr('alum')%}
+      {% asyncEach member in members | rejectattr('leadership') | rejectattr('alum')%}
         <custom-card img-square>
           {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
@@ -46,26 +46,26 @@ title: 'Members'
           {% endif %}
           {% if member.teams.length > 0 %}
             <div slot="tag" webc:nokeep>
-              {% for team in member.teams %}
+              {% asyncEach team in member.teams %}
                 <span class="button" data-small-button>{{ team }}</span>
-              {% endfor %}
+              {% endeach %}
             </div>
           {% endif %}
           {% if member.info.length > 0 %}
           	<p slot="content">
-            {% for item in member.info %}
+            {% asyncEach item in member.info %}
               {{ item  }}<br>
-            {% endfor %}
+            {% endeach %}
             </p>
           {% endif %}
         </custom-card>
-      {% endfor %}
+      {% endeach %}
     </div>
   </div>
   <div class="region flow">
     <h2>Alum</h2>
     <div class="grid" data-layout="50-50">
-      {% for member in members | selectattr('alum')%}
+      {% asyncEach member in members | selectattr('alum')%}
         <custom-card img-square>
           {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
@@ -75,20 +75,20 @@ title: 'Members'
           {% endif %}
           {% if member.teams.length > 0 %}
             <div slot="tag" webc:nokeep>
-              {% for team in member.teams %}
+              {% asyncEach team in member.teams %}
                 <span class="button" data-small-button>{{ team }}</span>
-              {% endfor %}
+              {% endeach %}
             </div>
           {% endif %}
           {% if member.info.length > 0 %}
           	<p slot="content">
-            {% for item in member.info %}
+            {% asyncEach item in member.info %}
               {{ item  }}<br>
-            {% endfor %}
+            {% endeach %}
             </p>
           {% endif %}
         </custom-card>
-      {% endfor %}
+      {% endeach %}
     </div>
   </div>
 </div>
