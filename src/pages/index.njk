@@ -1,0 +1,33 @@
+---
+layout: base
+permalink: /index.html
+title: 'AquaPack Robotics'
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="splash" id="homepage-splash">
+      <div class="splash" id="glass-panel">
+        <img src="/assets/images/static/homepage-splash-logo.png" eleventy:ignore id="splash-logo">
+      </div>
+    </div>
+  </header>
+  {% include "partials/team-cards.njk" %}
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>About us</h2>
+      <p>
+        We build autonomous underwater vehicles! We are a team that consists of many disciplines all striving to run a successful organization and build a competitive robot.
+      </p>
+      {% image "/assets/images/robosub-23-team-photo.jpg", null, null, null, "about-image" %}
+      <p>
+        We are a student-led 501(c)(3) organization that is always open to new members from any major. Our team works outside the classroom to not only build a competitive robot, also to improve each other's technical skills and spread the passion of robotics throughout the community. Our robot, SeaWolf, competes in the RoboSub competition annually. You can learn more about RoboSub here.
+      </p>
+    </div>
+  </div>
+  {% include "partials/hours.njk" %}
+</div>
+
+{% css "local" %}
+  {% include "css/homepage.css" %}
+{% endcss %}

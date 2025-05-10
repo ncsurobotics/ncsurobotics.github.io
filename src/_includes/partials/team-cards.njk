@@ -1,0 +1,15 @@
+<div class="grid" data-layout="50-50">
+  {% for team in subteams %}
+    <team-card>
+    	<h2 slot="name">{{ team.name }}</h2>
+      <div slot="icon">
+        {% svg "subteams/" + team.icon %}
+      </div>
+    	<p slot="content">{{ team.description }}</p>
+    </team-card>
+  {% endfor %}
+</div>
+
+{% css "local" %}
+  {% include "css/team-card.css" %}
+{% endcss %}

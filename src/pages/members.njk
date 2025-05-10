@@ -1,0 +1,44 @@
+---
+layout: base
+permalink: /members.html
+title: 'Members'
+---
+
+<div class="wrapper">
+  <div class="grid" data-layout="50-50">
+    {% for member in members %}
+      <custom-card img-square>
+        {% if member.image === null %}
+          {% set imageName = member.image %}
+        {% elif member.image === false %}
+          {% set imageName = "member.svg" %}
+        {% else %}
+          {% set imageName = member.firstName + " " + member.lastName + ".jpg" %}
+        {% endif %}
+        {% image "/assets/images/members/" + imageName %}
+      	<h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2>
+        {% if member.position %}
+         	<h3 slot="subtitle">{{ member.position }}</h3>
+        {% endif %}
+        {% if member.teams.length > 1 %}
+          <div slot="tag" webc:nokeep>
+            {% for team in member.teams %}
+              <span class="button" data-small-button>{{ team }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if member.info.length > 0 %}
+        	<p slot="content">
+          {% for item in member.info %}
+            {{ item  }}<br>
+          {% endfor %}
+          </p>
+        {% endif %}
+      </custom-card>
+    {% endfor %}
+  </div>
+</div>
+
+{% css "local" %}
+  {% include "css/custom-card.css" %}
+{% endcss %}
