@@ -2,6 +2,9 @@
 layout: base
 permalink: /index.html
 title: 'AquaPack Robotics'
+blog:
+  title: 'Blog'
+  intro: "Showing the last 4 blog posts"
 ---
 
 <div class="wrapper">
@@ -27,6 +30,23 @@ title: 'AquaPack Robotics'
     </div>
   </div>
   {% include "partials/hours.njk" %}
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+      <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 4) %}
+            {% set headingLevel = "h3" %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+    </div>
+  </section>
 </div>
 
 {% css "local" %}

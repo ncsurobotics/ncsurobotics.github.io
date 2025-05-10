@@ -2,7 +2,13 @@ export default {
   top: [
     {
       text: 'Members',
-      url: '/members/'
+      url: '/members/',
+      children: [
+        {
+          text: 'SeaWolves',
+          url: '/seawolves/'
+        }
+      ]
     },
     {
       text: 'SeaWolves',
@@ -19,6 +25,10 @@ export default {
     {
       text: 'Sponsors',
       url: '/sponsors/'
+    },
+    {
+      text: 'Blog',
+      url: '/blog/'
     },
   ],
   bottom: [
