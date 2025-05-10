@@ -20,6 +20,38 @@
     {
       "name": "Gold",
       "value": "#fbbe25"
+    },
+    {
+      "name": "Wolfpack Red",
+      "value": "#c00000"
+    },
+    {
+      "name": "Reynolds Red",
+      "value": "#900000"
+    },
+    {
+      "name": "Pyroman Flame",
+      "value": "#d14905"
+    },
+    {
+      "name": "Hunt Yellow",
+      "value": "#fac800"
+    },
+    {
+      "name": "Geonomic Green",
+      "value": "#6f7d1c"
+    },
+    {
+      "name": "Carmichael Aqua",
+      "value": "#008473"
+    },
+    {
+      "name": "Innovation Blue",
+      "value": "#427e93"
+    },
+    {
+      "name": "Bio Indigo",
+      "value": "#4156a1"
     }
   ],
   "standalone": []

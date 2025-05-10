@@ -61,6 +61,70 @@
     {
       "name": "Gold Subdued",
       "value": "#f1c15b"
+    },
+    {
+      "name": "Wolfpack Red",
+      "value": "#c00000"
+    },
+    {
+      "name": "Wolfpack Red Subdued",
+      "value": "#b13125"
+    },
+    {
+      "name": "Reynolds Red",
+      "value": "#900000"
+    },
+    {
+      "name": "Reynolds Red Subdued",
+      "value": "#842219"
+    },
+    {
+      "name": "Pyroman Flame",
+      "value": "#d14905"
+    },
+    {
+      "name": "Pyroman Flame Subdued",
+      "value": "#c25831"
+    },
+    {
+      "name": "Hunt Yellow",
+      "value": "#fac800"
+    },
+    {
+      "name": "Hunt Yellow Subdued",
+      "value": "#f1ca56"
+    },
+    {
+      "name": "Geonomic Green",
+      "value": "#6f7d1c"
+    },
+    {
+      "name": "Geonomic Green Subdued",
+      "value": "#707c37"
+    },
+    {
+      "name": "Carmichael Aqua",
+      "value": "#008473"
+    },
+    {
+      "name": "Carmichael Aqua Subdued",
+      "value": "#328173"
+    },
+    {
+      "name": "Innovation Blue",
+      "value": "#427e93"
+    },
+    {
+      "name": "Innovation Blue Subdued",
+      "value": "#4f7c8d"
+    },
+    {
+      "name": "Bio Indigo",
+      "value": "#4156a1"
+    },
+    {
+      "name": "Bio Indigo Subdued",
+      "value": "#465894"
     }
   ]
 }

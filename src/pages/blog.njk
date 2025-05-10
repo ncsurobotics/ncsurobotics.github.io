@@ -9,8 +9,8 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
 ---
 
 <div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+  <header class="blog-header full | section">
+    <div class="flow region">
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
   </header>
@@ -34,3 +34,6 @@ permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber
   {% endif %}
 </div>
 
+{% css "local" %}
+  {% include "css/blog.css" %}
+{% endcss %}
