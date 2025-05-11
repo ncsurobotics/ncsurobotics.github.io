@@ -1,0 +1,65 @@
+---
+layout: base
+permalink: /index.html
+title: 'AquaPack Robotics'
+blog:
+  title: 'Blog'
+  intro: "Showing the last 4 blog posts"
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="splash" id="homepage-splash">
+      <div class="splash" id="glass-panel">
+        {# <img src="/assets/images/static/homepage-splash-logo.svg" eleventy:ignore id="splash-logo"> #}
+        {% svg "misc/homepage-splash-logo-min", null, null, null, "splash-logo", "splash-logo" %}
+      </div>
+    </div>
+  </header>
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>About us</h2>
+      <p>
+        We build autonomous underwater vehicles! We are a team that consists of many disciplines all striving to run a successful organization and build a competitive robot.
+      </p>
+      {% image "/assets/images/robosub-23-team-photo.jpg", null, null, null, "about-image" %}
+      <p>
+        We are a student-led 501(c)(3) organization that is always open to new members from any major. Our team works outside the classroom to not only build a competitive robot, also to improve each other's technical skills and spread the passion of robotics throughout the community. Our robot, SeaWolf, competes in the RoboSub competition annually. You can learn more about RoboSub here.
+      </p>
+    </div>
+  </div>
+  {% include "partials/team-cards.njk" %}
+  {% include "partials/hours.njk" %}
+  {% set itemList = collections.about %}
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Learn more</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+      <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 4) %}
+            {% set headingLevel = "h3" %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+      <blockquote class="flow">
+        <p>{% svg "misc/people-group" %} Get Involved!</p>
+        <p>If any information you have seen so far interests you, we would be happy for you to <a href="https://getinvolved.ncsu.edu/organization/apr">join our team!</a></p>
+      </blockquote>
+    </div>
+  </section>
+</div>
+
+{% css "local" %}
+  {% include "css/homepage.css" %}
+{% endcss %}

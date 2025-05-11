@@ -1,0 +1,7 @@
+.blur {
+  filter: blur(8px);
+}
+
+.blur-container {
+  overflow: clip;
+}

@@ -1,0 +1,48 @@
+#hours {
+  --gutter: var(--space-xs-s);
+  color: var(--color-text);
+  padding: var(--space-s-m);
+  max-inline-size: unset;
+  display: grid;
+  /* grid-template-rows: [content] max-content; */
+  /* grid-template-columns: [blurb] 1fr [graph] 2fr; */
+  grid-template-areas:
+    "title title"
+    "blurb graph";
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  grid-area: title;
+}
+
+#blurb {
+  grid-area: blurb;
+}
+
+.bar-chart {
+  list-style: none;
+
+  & h1 {
+      font-size: 14pt;
+  }
+  /* grid-column: graph; */
+  /* grid-row: content; */
+  grid-area: graph;
+}
+
+.bar {
+    display: inline-block;
+    height: 10px;
+    background-color: var(--color-primary);
+}
+
+#total-hours {
+    background: linear-gradient(
+        90deg,
+        rgba(204, 0, 0, 1) 0%,
+        rgba(204, 0, 0, 1) 80%,
+        rgba(204, 0, 0, 0) 100%
+    );
+}

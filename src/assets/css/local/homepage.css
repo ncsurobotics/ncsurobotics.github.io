@@ -1,0 +1,52 @@
+#homepage-splash {
+  background: url("/assets/images/static/homepage-splash.jpg") no-repeat center center scroll;
+  background-size: cover;
+}
+
+#glass-panel {
+  backdrop-filter: blur(8px);
+  padding: 25px 25px;
+  align-items: center;
+}
+
+.splash {
+  width: 100%;
+  height: calc(100vh - calc(40px + 14pt));
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  overflow: clip;
+
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: false;
+
+  & h1 {
+      color: white;
+  }
+}
+
+.splash svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 50px;
+  height: 65%;
+  filter: drop-shadow(3px 5px 3px rgb(0 0 0 / 0.4));
+}
+
+.splash-wrapper {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  background: url("/assets/images/static/homepage-splash.jpg") no-repeat center center scroll;
+  background-size: cover;
+}
+
+.about-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

@@ -1,0 +1,4 @@
+<team-card class="flow no-indicator" webc:root>
+  <div class="team-banner | cluster"><slot name="icon"></slot><slot name="name"></slot></div>
+  <slot name="content"></slot>
+</team-card>

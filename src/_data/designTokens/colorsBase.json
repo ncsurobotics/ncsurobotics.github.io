@@ -1,0 +1,58 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print. neutral and vibrant colors are converted to color palettes, fixed colors are kept as they are",
+  "shades_neutral": [
+    {
+      "name": "Gray",
+      "value": "#888888"
+    }
+  ],
+  "shades_vibrant": [],
+  "light_dark": [
+    {
+      "name": "Pink",
+      "value": "#dd4462"
+    },
+    {
+      "name": "Blue",
+      "value": "#4467dd"
+    },
+    {
+      "name": "Gold",
+      "value": "#fbbe25"
+    },
+    {
+      "name": "Wolfpack Red",
+      "value": "#c00000"
+    },
+    {
+      "name": "Reynolds Red",
+      "value": "#900000"
+    },
+    {
+      "name": "Pyroman Flame",
+      "value": "#d14905"
+    },
+    {
+      "name": "Hunt Yellow",
+      "value": "#fac800"
+    },
+    {
+      "name": "Geonomic Green",
+      "value": "#6f7d1c"
+    },
+    {
+      "name": "Carmichael Aqua",
+      "value": "#008473"
+    },
+    {
+      "name": "Innovation Blue",
+      "value": "#427e93"
+    },
+    {
+      "name": "Bio Indigo",
+      "value": "#4156a1"
+    }
+  ],
+  "standalone": []
+}
