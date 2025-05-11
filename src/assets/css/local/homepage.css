@@ -50,3 +50,7 @@
   margin-right: auto;
   display: block;
 }
+
+.sub {
+  fill: var(--color-primary);
+}
