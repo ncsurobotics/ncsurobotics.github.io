@@ -1,0 +1,26 @@
+{
+  "name": "AquaPack Robotics - AquaPack Robotics is a student-run 501(c)(3) organization affiliated with North Carolina State University",
+  "short_name": "AquaPack Robotics",
+  "start_url": "http://localhost:8080",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#c00000",
+  "background_color": "#f8f8f8",
+  "display": "standalone"
+}
