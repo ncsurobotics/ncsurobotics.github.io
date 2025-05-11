@@ -35,7 +35,7 @@
 .bar {
     display: inline-block;
     height: 10px;
-    background-color: #c00;
+    background-color: var(--color-primary);
 }
 
 #total-hours {
