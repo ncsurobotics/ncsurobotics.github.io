@@ -1,13 +1,16 @@
-<div class="region grid" data-layout="50-50">
-  {% for team in subteams %}
-    <team-card>
-    	<h2 slot="name">{{ team.name }}</h2>
-      <div slot="icon">
-        {% svg "subteams/" + team.icon %}
-      </div>
-    	<p slot="content">{{ team.description }}</p>
-    </team-card>
-  {% endfor %}
+<div class="region">
+  <div class="grid" data-layout="50-50">
+    {% for team in subteams %}
+      <team-card>
+      	<h2 slot="name">{{ team.name }}</h2>
+        <div slot="icon">
+          {% svg "subteams/" + team.icon %}
+        </div>
+      	<p slot="content">{{ team.description }}</p>
+      </team-card>
+    {% endfor %}
+  </div>
+  <p class="text-center">Learn more about our teams <a href="/disciplines/">here</a></p>
 </div>
 
 {% css "local" %}
