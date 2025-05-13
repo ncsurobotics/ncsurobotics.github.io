@@ -13,4 +13,4 @@ Disallow: /
 User-agent: Omgilibot 
 Disallow: / 
 
-Sitemap: http://localhost:8080/sitemap.xml
+Sitemap: https://ncsurobotics.github.io/sitemap.xml

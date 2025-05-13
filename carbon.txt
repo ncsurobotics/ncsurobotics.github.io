@@ -1,6 +1,6 @@
 [org]
 disclosures = [
-    { doc_type='sustainability-page', url='http://localhost:8080/sustainability/', domain='localhost' }
+    { doc_type='sustainability-page', url='https://ncsurobotics.github.io/sustainability/', domain='ncsurobotics.github.io' }
 ]
 
 [upstream]
