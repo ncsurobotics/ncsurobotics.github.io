@@ -39,7 +39,10 @@ jobs:
           key: ${{ runner.os }}-eleventy-fetch-cache
 
       - run: npm ci
-      - run: npm run build
+      - name: Build
+        env:
+          URL: https://ncsurobotics.github.io
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
