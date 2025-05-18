@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-excellent",
+  "name": "aquapack-robotics",
   "version": "4.1.8",
-  "description": "Eleventy starter built around the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "description": "the AquaPack Robotics website, built with Eleventy using the Eleventy Excellent starter created by Lene Saile.",
+  "author": "AquaPack Robotics",
   "license": "ISC",
   "type": "module",
   "engines": {
@@ -22,7 +22,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/ncsurobotics/ncsurobotics.github.io.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
