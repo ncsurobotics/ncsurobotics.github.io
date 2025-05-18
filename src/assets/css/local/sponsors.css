@@ -5,3 +5,12 @@ th.tier {
 th.value{
     width: 15%;
 }
+
+.sponsor-logo {
+  display: block;
+  block-size: auto;
+}
+
+img {
+  background-color: #ffffff;
+}

@@ -12,19 +12,24 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 > Interested in sponsoring us? See our sponsorship tiers [here](/sponsors/tiers.html)
 
 ## Diamond Sponsors
-![Analog Devices Logo](/assets/svg/sponsors/analog-devices-logo.svg)
-![Analog Devices Logo](/assets/svg/sponsors/bae-systems-logo.svg)
-- EYE @ NCSU
+{% svg "sponsors/analog-devices-logo-min", null, "sponsor-logo" %}
+{% svg "sponsors/bae-systems-logo-min", null, "sponsor-logo" %}
+- **Engineer Your Experience @ NC State University**
 
 ## Platinum Sponsors
-- E-Council @ NCSU
+![Engineer's Council Logo](/assets/images/sponsors/engineers-council-logo.png){class="sponsor-logo"}
 
 ## Gold Sponsors
-![Analog Devices Logo](/assets/svg/sponsors/Caterpillar_logo.svg)
-- NCSU SGA
-- Silver
-- Timken
+{% svg "sponsors/caterpillar-logo-min", null, "sponsor-logo" %}<br>
+- **NC State University Student Government Appropriations**
+
+## Silver Sponsors
+{% svg "sponsors/timken-logo", null, "sponsor-logo" %}
 
 ## Software Sponsors
-- OnShape
-- Altium
+{% svg "sponsors/onshape-logo-min", null, "sponsor-logo" %}<br>
+{% svg "sponsors/altium-logo", null, "sponsor-logo" %}
+
+{% css "local" %}
+  {% include "css/sponsors.css" %}
+{% endcss %}
