@@ -1,6 +1,6 @@
 {
   "name": "aquapack-robotics",
-  "version": "4.1.8",
+  "version": "4.1.9",
   "description": "the AquaPack Robotics website, built with Eleventy using the Eleventy Excellent starter created by Lene Saile.",
   "author": "AquaPack Robotics",
   "license": "ISC",
@@ -25,9 +25,9 @@
     "url": "https://github.com/ncsurobotics/ncsurobotics.github.io.git"
   },
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.0",
     "@11ty/eleventy-fetch": "^5.1.0",
-    "@11ty/eleventy-img": "^6.0.3",
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
@@ -65,7 +65,7 @@
     "postcss-js": "^4.0.1",
     "prettier-plugin-jinja-template": "^2.1.0",
     "rimraf": "^6.0.1",
-    "sanitize-html": "^2.16.0",
+    "sanitize-html": "^2.17.0",
     "sharp": "^0.34.1",
     "sharp-ico": "^0.1.5",
     "slugify": "^1.6.6",
