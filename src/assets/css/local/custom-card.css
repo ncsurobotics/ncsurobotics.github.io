@@ -7,7 +7,7 @@ custom-card {
   border-radius: var(--border-radius-medium);
   max-inline-size: unset;
   display: grid;
-  grid-template-rows: [image] max-content [headline] max-content [subtitle] max-content [meta] max-content [desc] auto [footer] max-content;
+  grid-template-rows: [image] max-content [headline] max-content [subtitle] max-content [meta] max-content [desc] auto [footer] max-content [icons] max-content;
 }
 
 /* avoid flow space being added to unused elements with nested slots */
@@ -52,6 +52,11 @@ custom-card img {
 custom-card > .meta {
   grid-row: meta;
   font-size: var(--size-step-min-1);
+}
+
+custom-card > .icons{
+  grid-row: icons;
+  font-size: var(--size-step-3);
 }
 
 custom-card > p {

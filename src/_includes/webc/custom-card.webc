@@ -2,7 +2,8 @@
   <slot name="image"></slot>
   <slot name="headline"></slot>
   <slot name="subtitle"></slot>
-  <div class="meta | cluster"><slot name="date"></slot><slot name="tag"></slot><slot name="icons"></slot></div>
+  <div class="meta | cluster"><slot name="date"></slot><slot name="tag"></slot></div>
+  <div class="icons | cluster"><slot name="icons"></slot></div>
   <slot name="content"></slot>
   <slot name="footer"></slot>
 </custom-card>
