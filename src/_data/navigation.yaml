@@ -23,6 +23,9 @@ top:
 bottom:
   - text: Contact Us
     url: /contact/
+    
+  - text: Sustainability
+    url: /sustainability/
 
   - text: Colophon
     url: /colophon/
