@@ -14,6 +14,9 @@ dotenv.config();
 // add yaml support
 import yaml from 'js-yaml';
 
+// PageFind search
+import * as pagefind from "pagefind";
+
 //  config import
 import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
@@ -90,6 +93,21 @@ export default async function (eleventyConfig) {
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
+
+  eleventyConfig.on('eleventy.after', async function ({ dir }) {
+    // Create a Pagefind search index to work with
+    const { index } = await pagefind.createIndex();
+
+    // Index all HTML files in a directory
+    await index.addDirectory({
+        path: "dist"
+    });
+
+    // Or, write the index to disk
+    await index.writeFiles({
+        outputPath: "dist/pagefind"
+    });
+  });
 
   // --------------------- Passthrough File Copy
 

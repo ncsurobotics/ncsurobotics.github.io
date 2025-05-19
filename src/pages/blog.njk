@@ -6,9 +6,11 @@ pagination:
   data: collections.allPosts
   size: 8
 permalink: 'blog/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+attributes: 
+  top: data-pagefind-weight = 0.6
 ---
 
-<div class="wrapper">
+<div class="wrapper" >
   <header class="blog-header full | section">
     <div class="flow region">
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
