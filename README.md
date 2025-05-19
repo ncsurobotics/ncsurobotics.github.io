@@ -74,8 +74,8 @@ bottom:
 ```
 ### Members
 - Member data is stored as a yaml list in `src/_data/members.yaml`
-- Member photos are expected to be in `src/assets/images/members/` and name `firstName lastName.jpg`
-	- John Doe would need a photo at `src/assets/images/members/John Doe.jpg`
+- Member photos are expected to be in `src/assets/images/members/` and name `firstName-lastName.jpg`
+	- John Doe would need a photo at `src/assets/images/members/John-Doe.jpg`
 	- If the photo is in a different format or cannot be renamed, manually specify the image as shown in the format below
 #### Format
 ```yaml
@@ -112,7 +112,7 @@ bottom:
   github: https://github.com/jdoe/
   
   # [Optional] Determines the image displayed
-  #   If not present, firstName + lastName + ".jpg" will be used
+  #   If not present, firstName + "-" + lastName + ".jpg" will be used
   #   If false, a default image will be used
   #   If set to a string, it will be used as the file name
   image: "jdoe-abcdefg.png"

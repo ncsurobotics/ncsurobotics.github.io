@@ -9,7 +9,7 @@ title: 'Members'
     <div class="grid" data-layout="50-50">
       {% asyncEach member in members | selectattr('leadership') | rejectattr('alum')%}
         <custom-card img-square>
-          {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
+          {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
         	<h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2>
           {% if member.position %}
@@ -29,6 +29,19 @@ title: 'Members'
             {% endeach %}
             </p>
           {% endif %}
+          <div slot="icons" webc:nokeep>
+            {% if member.platforms %}
+              {% for key, value in member.platforms %}
+                {% if value != "" %}
+                  <!-- regular platforms -->
+                  <a class="no-indicator" href="{{ value }}" rel="me">
+                    <span class="visually-hidden">{{ key | capitalize }}</span>
+                    {% svg 'platform/' + key %}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
         </custom-card>
       {% endeach %}
     </div>
@@ -38,7 +51,7 @@ title: 'Members'
     <div class="grid" data-layout="50-50">
       {% asyncEach member in members | rejectattr('leadership') | rejectattr('alum')%}
         <custom-card img-square>
-          {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
+          {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
         	<h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2>
           {% if member.position %}
@@ -58,6 +71,19 @@ title: 'Members'
             {% endeach %}
             </p>
           {% endif %}
+          <div slot="icons" webc:nokeep>
+            {% if member.platforms %}
+              {% for key, value in member.platforms %}
+                {% if value != "" %}
+                  <!-- regular platforms -->
+                  <a class="no-indicator" href="{{ value }}" rel="me">
+                    <span class="visually-hidden">{{ key | capitalize }}</span>
+                    {% svg 'platform/' + key %}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
         </custom-card>
       {% endeach %}
     </div>
@@ -67,7 +93,7 @@ title: 'Members'
     <div class="grid" data-layout="50-50">
       {% asyncEach member in members | selectattr('alum')%}
         <custom-card img-square>
-          {% set imageName = member.image | default(member.firstName + " " + member.lastName + ".jpg") | default("member.svg", true) %}
+          {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
           {% image "/assets/images/members/" + imageName %}
         	<h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2>
           {% if member.position %}
@@ -87,6 +113,19 @@ title: 'Members'
             {% endeach %}
             </p>
           {% endif %}
+          <div slot="icons" webc:nokeep>
+            {% if member.platforms %}
+              {% for key, value in member.platforms %}
+                {% if value != "" %}
+                  <!-- regular platforms -->
+                  <a class="no-indicator" href="{{ value }}" rel="me">
+                    <span class="visually-hidden">{{ key | capitalize }}</span>
+                    {% svg 'platform/' + key %}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
         </custom-card>
       {% endeach %}
     </div>

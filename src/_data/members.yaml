@@ -5,8 +5,9 @@
   alum: false
   teams:
     - Software
-  linkedin: https://www.linkedin.com/in/Ashton-Henderlite
-  github: https://github.com/cowboylaserkittenjetshark/
+  platforms:
+    linkedin: 'https://www.linkedin.com/in/Ashton-Henderlite'
+    github: 'https://github.com/cowboylaserkittenjetshark/'
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -19,8 +20,9 @@
   teams:
     - Admin
     - Electrical
-  linkedin: https://www.linkedin.com/in/cpmori/
-  github: https://github.com/cpmori
+  platforms:
+    linkedin: https://www.linkedin.com/in/cpmori/
+    github: https://github.com/cpmori
   info:
     - PhD Electrical Engineering
 - firstName: Elizabeth
@@ -32,7 +34,8 @@
   teams:
     - Admin
     - Mechanical
-  linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
+  platforms:
+    linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
   info:
     - 3rd Year Undergraduate Student
     - Mechanical Engineering
@@ -43,7 +46,8 @@
   teams:
     - Admin
     - Mechanical
-  linkedin: https://www.linkedin.com/in/julianna-marie-white/
+  platforms:
+    linkedin: https://www.linkedin.com/in/julianna-marie-white/
   info:
     - 3rd Year Undergraduate Student
     - Nuclear Engineering
@@ -54,7 +58,8 @@
   teams:
     - Admin
     - Electrical
-  linkedin: https://www.linkedin.com/in/omar-obeid-548199207/
+  platforms:
+    linkedin: https://www.linkedin.com/in/omar-obeid-548199207/
   info:
     - 3rd Year Undergraduate Student
     - Computer Engineering
@@ -71,8 +76,9 @@
   alum: true
   teams:
     - Electrical
-  linkedin: https://www.linkedin.com/in/wpkelso/
-  github: https://github.com/wpkelso
+  platforms:
+    linkedin: https://www.linkedin.com/in/wpkelso/
+    github: https://github.com/wpkelso
   info:
     - Alum
     - Computer Engineering
@@ -82,8 +88,9 @@
   leadership: true
   teams:
     - Software
-  linkedin: https://www.linkedin.com/in/achyuta-kannan/
-  github: https://github.com/fategg555
+  platforms:
+    linkedin: 'https://www.linkedin.com/in/achyuta-kannan/'
+    github: 'https://github.com/fategg555'
   info:
     - 3rd Year Undergraduate Student
     - Computer Science
@@ -94,7 +101,8 @@
   alum: true
   teams:
     - Mechanical
-  linkedin: https://www.linkedin.com/in/donaldshrader/
+  platforms:
+    linkedin: https://www.linkedin.com/in/donaldshrader/
   info:
     - Alum
     - Mechanical Engineering
@@ -103,7 +111,8 @@
   leadership: false
   teams:
     - Electrical
-  linkedin: https://www.linkedin.com/in/abhiram-poosarla
+  platforms:
+    linkedin: https://www.linkedin.com/in/abhiram-poosarla
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
