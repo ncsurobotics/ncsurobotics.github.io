@@ -4,39 +4,39 @@
   "items": [
     {
       "name": "Gray 100",
-      "value": "#f8f8f8"
+      "value": "#f7f8fb"
     },
     {
       "name": "Gray 200",
-      "value": "#e4e4e4"
+      "value": "#e3e4e8"
     },
     {
       "name": "Gray 300",
-      "value": "#aeaeae"
+      "value": "#adaeb1"
     },
     {
       "name": "Gray 400",
-      "value": "#808080"
+      "value": "#7e8086"
     },
     {
       "name": "Gray 500",
-      "value": "#636363"
+      "value": "#61636a"
     },
     {
       "name": "Gray 600",
-      "value": "#484848"
+      "value": "#46474f"
     },
     {
       "name": "Gray 700",
-      "value": "#3a3a3a"
+      "value": "#393a40"
     },
     {
       "name": "Gray 800",
-      "value": "#2e2e2e"
+      "value": "#2c2d33"
     },
     {
       "name": "Gray 900",
-      "value": "#161616"
+      "value": "#15161a"
     },
     {
       "name": "Pink",
