@@ -5,29 +5,34 @@
   {% endif %}
 {% endfor %}
 
-<div class="region grid" data-layout="50-50" id="hours">
-  <h2 id="title">Over {{ totalHours }} Hours Spent Engineering</h2>
-  <p id="blurb">
-      We pride ourselves in working hard to develop a functional
-      and robust system. Our team of engineers clocked over {{ totalHours }}
-      hours during the 2022-2023 academic school year. Teams are
-      often working together at meetings and tests, so concurrent
-      hours have been recorded individually.
-  </p>
-  <ul class="bar-chart">
-    {% for team in subteams %}
-      {% if team.hours %}
-        <li>
-            <h1>{{ team.name }}</h1>
-            <p>
-                <span class="bar" style="width: {{ (team.hours * 100) / (totalHours * 0.8)  }}%"></span>
-                {{ team.hours }}
-            </p>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+<div class="full | region">
+  <div class="wrapper flow prose">
+    <h2 id="title">Over {{ totalHours }} Hours Spent Engineering</h2>
+    <div class="grid" data-layout="50-50" id="hours">
+      <p id="blurb">
+          We pride ourselves in working hard to develop a functional
+          and robust system. Our team of engineers clocked over {{ totalHours }}
+          hours during the 2022-2023 academic school year. Teams are
+          often working together at meetings and tests, so concurrent
+          hours have been recorded individually.
+      </p>
+      <ul class="bar-chart">
+        {% for team in subteams %}
+          {% if team.hours %}
+            <li>
+                <h1>{{ team.name }}</h1>
+                <p>
+                    <span class="bar" style="width: {{ (team.hours * 100) / (totalHours * 0.8)  }}%"></span>
+                    {{ team.hours }}
+                </p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
+
 {% css "local" %}
   {% include "css/hours.css" %}
 {% endcss %}

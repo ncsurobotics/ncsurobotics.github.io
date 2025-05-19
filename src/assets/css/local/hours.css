@@ -4,32 +4,17 @@
   padding: var(--space-s-m);
   max-inline-size: unset;
   display: grid;
-  /* grid-template-rows: [content] max-content; */
-  /* grid-template-columns: [blurb] 1fr [graph] 2fr; */
-  grid-template-areas:
-    "title title"
-    "blurb graph";
   align-items: center;
   justify-content: center;
-}
-
-#title {
-  grid-area: title;
-}
-
-#blurb {
-  grid-area: blurb;
+  padding: 0;
 }
 
 .bar-chart {
   list-style: none;
 
   & h1 {
-      font-size: 14pt;
+      font-size: var(--size-step-min-1);
   }
-  /* grid-column: graph; */
-  /* grid-row: content; */
-  grid-area: graph;
 }
 
 .bar {
