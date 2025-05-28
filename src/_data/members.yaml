@@ -1,3 +1,4 @@
+# Ashton Henderlite
 - firstName: Ashton
   lastName: Henderlite
   position: null
@@ -12,6 +13,8 @@
     - 2nd Year Undergraduate Student
     - Computer Engineering
   image: false
+
+  #Christopher Mori
 - firstName: Christopher
   lastName: Mori
   position: President
@@ -25,9 +28,9 @@
     github: https://github.com/cpmori
   info:
     - PhD Electrical Engineering
-- firstName: Elizabeth
 
-  # Comment
+# Elizabeth Gillikin
+- firstName: Elizabeth
   lastName: Gillikin
   position: President
   leadership: true
@@ -39,6 +42,8 @@
   info:
     - 3rd Year Undergraduate Student
     - Mechanical Engineering
+
+# Julianna White
 - firstName: Julianna
   lastName: White
   position: Project Manager
@@ -51,6 +56,8 @@
   info:
     - 3rd Year Undergraduate Student
     - Nuclear Engineering
+
+# Omar Obeid
 - firstName: Omar
   lastName: Obeid
   position: Secretary
@@ -64,6 +71,8 @@
     - 3rd Year Undergraduate Student
     - Computer Engineering
   image: false
+
+# Sophia Woodson
 - firstName: Sophia
   lastName: Woodson
   position: Treasurer
@@ -82,6 +91,8 @@
   info:
     - Alum
     - Computer Engineering
+
+# Achyuta Kannan
 - firstName: Achyuta
   lastName: Kannan
   position: Software Team Lead
@@ -94,6 +105,8 @@
   info:
     - 3rd Year Undergraduate Student
     - Computer Science
+
+# Donald Shrader
 - firstName: Donald
   lastName: Shrader
   position: Mechanical Team Lead
@@ -106,6 +119,8 @@
   info:
     - Alum
     - Mechanical Engineering
+
+# Abhi Poosarla
 - firstName: Abhi
   lastName: Poosarla
   leadership: false
