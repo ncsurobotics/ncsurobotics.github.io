@@ -78,19 +78,6 @@
   position: Treasurer
   leadership: true
   image: false
-- firstName: William
-  lastName: Kelso
-  position: Electrical Team Lead
-  leadership: true
-  alum: true
-  teams:
-    - Electrical
-  platforms:
-    linkedin: https://www.linkedin.com/in/wpkelso/
-    github: https://github.com/wpkelso
-  info:
-    - Alum
-    - Computer Engineering
 
 # Achyuta Kannan
 - firstName: Achyuta
@@ -105,20 +92,6 @@
   info:
     - 3rd Year Undergraduate Student
     - Computer Science
-
-# Donald Shrader
-- firstName: Donald
-  lastName: Shrader
-  position: Mechanical Team Lead
-  leadership: true
-  alum: true
-  teams:
-    - Mechanical
-  platforms:
-    linkedin: https://www.linkedin.com/in/donaldshrader/
-  info:
-    - Alum
-    - Mechanical Engineering
 
 # Abhi Poosarla
 - firstName: Abhi
