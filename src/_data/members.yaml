@@ -3,19 +3,19 @@
 # firstName, lastName, position, leadership, teams, platforms, info, and image.
 # position needs to be filled only if the member is in a leadership role
 
-# A.J.-Beckmann
-- firstName: A.J.
-  lastName: Beckmann
-  position: null
-  leadership: false
-  teams: 
-    - Electrical
+# Elizabeth Gillikin
+- firstName: Elizabeth
+  lastName: Gillikin
+  position: President
+  leadership: true
+  teams:
+    - Admin
+    - Mechanical
   platforms:
-    linkedin:
-    github:
+    linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
   info:
-    - 1st year Master's Student
-    - Electrical Engineering
+    - 3rd Year Undergraduate Student
+    - Mechanical Engineering
 
 # Abhi Poosarla
 - firstName: Abhi
@@ -32,6 +32,28 @@
     - 2nd Year Undergraduate Student
     - Computer Engineering
     - Incoming President
+
+# Julianna White
+- firstName: Julianna
+  lastName: White
+  position: Project Manager
+  leadership: true
+  teams:
+    - Admin
+  platforms:
+    linkedin: https://www.linkedin.com/in/julianna-marie-white/
+  info:
+    - 4th Year Undergraduate Student
+    - Nuclear Engineering
+
+# A.J.-Beckmann
+- firstName: A.J.
+  lastName: Beckmann
+  teams: 
+    - Electrical
+  info:
+    - 1st year Master's Student
+    - Electrical Engineering
 
 # Achyuta Kannan
 - firstName: Achyuta
@@ -50,13 +72,10 @@
 # Adhvik Rai
 - firstName: Adhvik
   lastName: Rai
-  position: null
-  leadership: false
   teams:
     - Electrical
   platforms:
     linkedin: https://www.linkedin.com/in/adhvik-rai/
-    github:
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -64,13 +83,8 @@
 # Aeden Fodi
 - firstName: Aeden
   lastName: Fodi
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info: 
     - 3rd Year Undergraduate Student
     - Mechanical Engineering
@@ -78,13 +92,8 @@
 # Akshay Pradhan
 - firstName: Akshay
   lastName: Pradhan
-  position: null
-  leadership: false
   teams: 
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Computer Engineering
@@ -93,8 +102,6 @@
 # Alexandria Epley
 - firstName: Alexandria
   lastName: Epley
-  position: null
-  leadership: false
   teams:
     - Mechanical
   platforms:
@@ -108,13 +115,10 @@
 # alexis mead
 - firstName: Alexis
   lastName: Mead
-  position: null
-  leadership: false
   teams:
     - Mechanical
   platforms:
     linkedin: https://www.linkedin.com/in/alexis-mead1/
-    github: 
   info: 
     - 1st Year Undergraduate Student
     - Mechanical Engineering
@@ -126,23 +130,19 @@
   info:
     - 5th Year Undergraduate Student
     - Industrial & Systems Engineering
-  leadership: false
+  leadership: true
   teams:
-    - Software
+    - Mechanical
   platforms:
     linkedin: https://www.linkedin.com/in/alex-ofsanik/
-    github: 
 
 # arjun kuncha
 - firstName: Arjun
   lastName: Kuncha
-  position: null
-  leadership: false
   teams:
     - Mechanical
   platforms:
     linkedin: https://www.linkedin.com/in/arjun-kuncha/
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Mechanical Engineering & Economics
@@ -150,8 +150,6 @@
 # Ashton Henderlite
 - firstName: Ashton
   lastName: Henderlite
-  position: null
-  leadership: false
   teams:
     - Software
   platforms:
@@ -164,13 +162,8 @@
 # chaitanya chauhan
 - firstName: Chaitanya
   lastName: Chauhan
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -178,14 +171,9 @@
 # christopher chu
 - firstName: Christopher
   lastName: Chu
-  position: null
-  leadership: false
   teams:
     - Electrical
     - Software
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical & Computer Engineering
@@ -193,13 +181,8 @@
 # cole austin
 - firstName: Cole
   lastName: Austin
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info: 
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -207,41 +190,17 @@
 # denver huffman
 - firstName: Denver
   lastName: Huffman
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
-    - Mechanical Engineering
-
-# Elizabeth Gillikin
-- firstName: Elizabeth
-  lastName: Gillikin
-  position: President
-  leadership: true
-  teams:
-    - Admin
-    - Mechanical
-  platforms:
-    linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
-  info:
-    - 3rd Year Undergraduate Student
     - Mechanical Engineering
 
 # everett brostedt
 - firstName: Everett
   lastName: Brostedt
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Electrical Engineering
@@ -249,13 +208,8 @@
 # gabriel chenevert
 - firstName: Gabriel
   lastName: Chenevert
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
       - 2nd Year PhD student
       - Mechanical Engineering
@@ -263,13 +217,8 @@
 # Gabriel Riccio
 - firstName: Gabriel
   lastName: Riccio
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical & Computer Engineering
@@ -277,13 +226,8 @@
 # Harper Martin
 - firstName: Harper
   lastName: Martin
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -291,13 +235,8 @@
 # Harrison McCleary
 - firstName: Harrison
   lastName: McCleary
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Computer Engineering
@@ -309,9 +248,6 @@
   leadership: true
   teams: 
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical Engineering
@@ -319,40 +255,17 @@
 # Jason Lu
 - firstName: Jason
   lastName: Lu
-  position: null
-  leadership: false
   teams:
     - Software
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Computer Science
 
-# Julianna White
-- firstName: Julianna
-  lastName: White
-  position: Project Manager
-  leadership: true
-  teams:
-    - Admin
-  platforms:
-    linkedin: https://www.linkedin.com/in/julianna-marie-white/
-  info:
-    - 4th Year Undergraduate Student
-    - Nuclear Engineering
-
 # Kelly-Newberry
 - firstName: Kelly
   lastName: Newberry
-  position: null
-  leadership: false
   teams: 
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Mechanical Engineering
@@ -360,13 +273,8 @@
 # Khang-Pham
 - firstName: Khang
   lastName: Pham
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Computer Engineering
@@ -374,13 +282,8 @@
 # Lucas Giannini
 - firstName: Lucas
   lastName: Giannini
-  position: null
-  leadership: false
   teams:
     - Business
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student	
     - Business Administration
@@ -388,13 +291,8 @@
 # Malachi Vazquez Carr
 - firstName: Malachi
   lastName: Vazquez-Carr
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical Engineering
@@ -402,13 +300,8 @@
 # Maxwell Moon
 - firstName: Maxwell
   lastName: Moon
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Electrical Engineering	
@@ -416,13 +309,8 @@
 # Mohamed Elhiber
 - firstName: Mohamed
   lastName: Elhiber
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical Engineering
@@ -430,13 +318,8 @@
 # Rahul Venulkar
 - firstName: Rahul
   lastName: Venulkar
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Computer Engineering
@@ -444,13 +327,8 @@
 # Reilly Witte
 - firstName: Reilly
   lastName: Witte
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Computer Engineering
@@ -458,13 +336,8 @@
 # Renuka Mahadevan
 - firstName: Renuka
   lastName: Mahadevan
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Aerospace Engineering
@@ -472,13 +345,8 @@
 # Ryan Page
 - firstName: Ryan
   lastName: Page
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Mechanical Engineering
@@ -486,13 +354,8 @@
 # Sahiti Mudireddy
 - firstName: Sahiti
   lastName: Mudireddy
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Electrical & Computer Engineering
@@ -500,14 +363,9 @@
 # Sameer Dalal
 - firstName: Sameer
   lastName: Dalal
-  position: null
-  leadership: false
   teams:
     - Electrical
     - Business
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student
     - Electrical & Computer Engineering
@@ -515,13 +373,8 @@
 # Saranga Rajagopalan
 - firstName: Saranga
   lastName: Rajagopalan
-  position: null
-  leadership: false
   teams:
     - Software
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 1st Year Undergraduate Student	
     - Computer Engineering & Computer Science
@@ -529,13 +382,8 @@
 # Spencer mol
 - firstName: Spencer
   lastName: Mol
-  position: null
-  leadership: false
   teams: 
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 3rd Year Undergraduate Student
     - Mechanical Engineering
@@ -543,13 +391,8 @@
 # Suvesh Bhusal
 - firstName: Suvesh
   lastName: Bhusal
-  position: null
-  leadership: false
   teams:
     - Electrical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Electrical Engineering
@@ -557,13 +400,8 @@
 # Trevor Petzold
 - firstName: Trevor
   lastName: Petzold
-  position: null
-  leadership: false
   teams:
     - Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Aerospace Engineering
@@ -571,13 +409,8 @@
 # Zeta Held
 - firstName: Zeta
   lastName: Held
-  position: null
-  leadership: false
   teams:
     -  Mechanical
-  platforms:
-    linkedin: 
-    github: 
   info:
     - 2nd Year Undergraduate Student
     - Mechanical Engineering
