@@ -8,7 +8,7 @@ title: 'Members'
   {% if leadership.length > 0 %}
     <div class="region flow">
       <h2>Leadership</h2>
-      <div class="grid" data-layout="50-50">
+      <div class="grid" data-layout="fourths">
         {% asyncEach member in leadership %}
           <custom-card img-square>
             {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
