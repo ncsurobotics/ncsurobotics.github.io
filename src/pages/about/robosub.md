@@ -1,7 +1,7 @@
 ---
 title: RoboSub
 ---
-RoboSub is an annual competition held typically held in late July - early August. it encompasses schools from around the world, and tasks them with building fully autonomous underwater robots (AUVs). These robots must perform a wide array of tasks, with the themes of said tasks changing annually. The wide variety of tasks includes Gate, Buoy, Path, Bins, Torpedoes, and Octagon. For more information, visit the [RoboSub website](https://robosub.org/).
+RoboSub is an annual competition typically held in late July - early August. It includes schools from around the world and tasks them with building fully autonomous underwater robots (AUVs). These robots must perform a wide array of tasks, with the specifics of said tasks changing annually. Historically, tasks have included challenges such as Gate, Buoy, Path, Bins, Torpedoes, and Octagon. For more information about tasks, visit the [RoboSub website](https://robosub.org/).
 
 ## Tasks
 - ### Gate
@@ -18,4 +18,4 @@ RoboSub is an annual competition held typically held in late July - early August
 - ### Bins
   Bins is a task that consists of two bins, each with a separate set of two different objects. 1/3 of each of the bins is covered, requiring the AUV to drop markers into either bin then lift the covering off a bin.
 
-You can read more about the specific rules and tasks for the current year's competition [here](https://ncsurobotics.github.io/html/about/robosub.html).
+To see this years tasks and competition details, check out the newest version of the [Robosub Handbook](https://robonation.org/app/uploads/sites/4/2025/04/2025-RoboSub_Team-Handbook-04_25_25.pdf)!
