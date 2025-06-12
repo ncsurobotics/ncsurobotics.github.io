@@ -15,8 +15,8 @@ The Industry Partners Program (IPP) is a effort by AquaPack to facilitate connec
 
 ### Industry Partner Benefits
 - We maintain a book with copies of the resumes of our members, which IPP partners gain access to.
-- Our organization emphasizes industry readiness, so we use industry-standard tools and practices wherever possible. Our students are already trained and comfortable with software such as OnShape and Git.
-- Partner companies build relationships with a continually renewing talent pool of high quality students, passionate about robotics and more.
+- Our organization emphasizes industry readiness, so we use industry-standard tools and practices wherever possible. Our students are already trained and competent with software such as Solidworks and Git.
+- Partner companies build relationships with a continually renewing talent pool of high quality students from a wide range of engineering diciplines, passionate about robotics and more.
 
 > {% svg "misc/message" %} Interested?
 >

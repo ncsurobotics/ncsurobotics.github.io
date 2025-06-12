@@ -6,9 +6,12 @@ permalink: /seawolves/pastSeawolves/index.html
 layout: page
 ---
 
+*In the 21 years since our founding in 2004, AquaPack Robotics has developed and constructed a number of innovative AUV's. This page serves as a catalog of the previous seven generations of SeaWolf robots.*
+
 ## SeaWolf VII
 <div class="grid" data-layout="50-50">
-SeaWolf VII competed in RoboSub from 2017 to 2019, before succumbing to a series of difficult-to-debug issues deriving from an overly complex system.
+<p>SeaWolf VII competed in RoboSub from 2017 to 2019, before succumbing to a series of difficult-to-debug issues deriving from an overly complex system. After her failure, our current AUV, <a href="/seawolves/seawolfVIII/">SWVIII<a> was developed to improve reliability and modularity.
+</p>
 {% image "/assets/images/seawolves/seaWolfVII.png", "SeaWolf VII, the seventh iteration of the SeaWolf AUV platform" %}
 </div>
 
