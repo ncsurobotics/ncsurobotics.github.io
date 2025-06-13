@@ -1,5 +1,5 @@
 ---
-Title: MOAB
+title: MOAB
 ---
 
 Electrical info goes here (jack please help)
