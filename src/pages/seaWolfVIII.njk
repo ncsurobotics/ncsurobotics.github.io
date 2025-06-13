@@ -1,0 +1,41 @@
+---
+title: SeaWolf VIII
+discover:
+  title: SeaWolf VIII
+permalink: /seawolves/seawolfVIII/index.html
+layout: page
+---
+
+<h2>A Testament to Iterative Design</h2>
+
+<div class="grid" data-layout="50-50">
+The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design.
+{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+</div>
+
+{% set itemList = collections.swVIIImech%}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Mechanical</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
+{% set itemList = collections.swVIIIelectrical%}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Electrical</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
+  {% set itemList = collections.swVIIIsoftware%}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Software</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
