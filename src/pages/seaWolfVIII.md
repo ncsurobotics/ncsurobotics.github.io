@@ -18,7 +18,15 @@ The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of 
 ### Mechanical Systems
 <div class = "grid" data-layout="50-50">
 {% image "/assets/images/seawolves/seaWolfVIII.png", "mech photo notes" %}
-Description of Mech systems
+  <div>
+    <ul>
+    <li>Waterproofing</li>
+    <li>Omnidirectional Movement System</li>
+    <li>Dropper</li>
+    <li>Torpedo</li>
+    <li>SolidWorks PDM Design Framework</li>
+    </ul>
+  </div>
 </div>
 
 ### Electrical Systems
