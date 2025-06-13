@@ -17,8 +17,8 @@ The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of 
 
 ### Mechanical Systems
 <div class = "grid" data-layout="50-50">
-Description of Mech systems
 {% image "/assets/images/seawolves/seaWolfVIII.png", "mech photo notes" %}
+Description of Mech systems
 </div>
 
 ### Electrical Systems
@@ -29,6 +29,6 @@ Description of Electrical Systems
 
 ### Software Systems
 <div class="grid" data-layout="50-50">
-Description of Software Systems
 {% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+Description of Software Systems
 </div>
