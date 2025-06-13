@@ -44,7 +44,7 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 
 ## Software Sponsors
 <div class="grid" data-layout="thirds">
-{% svg "sponsors/onshape-logo-min", null, "sponsor-logo" %}<br>
+{% svg "sponsors/onshape-logo-min", null, "sponsor-logo" %}
 {% svg "sponsors/altium-logo", null, "sponsor-logo" %}
 <p></p>
 </div>
