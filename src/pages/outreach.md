@@ -6,7 +6,7 @@ permalink: /outreach/index.html
 layout: page
 ---
 ## Industry Partners Program
-The Industry Partners Program (IPP) is a effort by AquaPack to facilitate connections between leading companies and our students—students with real-world engineering experience.
+The Industry Partners Program (IPP) is a effort by AquaPack to facilitate connections between leading companies and our students— students with real-world engineering experience.
 
 ### Student Benefits
 - We host resume workshops to review and revise your resume to improve your chances of getting employed.

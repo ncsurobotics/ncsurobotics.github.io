@@ -17,8 +17,8 @@ layout: page
 
 ## SeaWolf VI
 <div class="grid" data-layout="50-50">
-SeaWolf VI competed in RoboSub from 2014 to 2016.
 {% image "/assets/images/seawolves/seaWolfVI.jpg", "SeaWolf VI, the sixth iteration of the SeaWolf AUV platform" %}
+SeaWolf VI competed in RoboSub from 2014 to 2016.
 </div>
 
 ## SeaWolf V
@@ -29,8 +29,8 @@ SeaWolf V competed in RoboSub in 2012 and 2013.
 
 ## SeaWolf IV
 <div class="grid" data-layout="50-50">
-SeaWolf 4 competed in RoboSub in 2011.
 {% image "/assets/images/seawolves/seaWolfIV.jpg", "SeaWolf IV, the fourth iteration of the SeaWolf AUV platform" %}
+SeaWolf 4 competed in RoboSub in 2011.
 </div>
 
 ## SeaWolf III
@@ -41,8 +41,8 @@ SeaWolf 3 competed in RoboSub in 2009 and 2010.
 
 ## SeaWolf II
 <div class="grid" data-layout="50-50">
-SeaWolf 2 competed in RoboSub from 2006 to 2008. Her shell still hangs in our lab space.
 {% image "/assets/images/seawolves/seaWolfII.jpg", "SeaWolf II, the second iteration of the SeaWolf AUV platform" %}
+SeaWolf 2 competed in RoboSub from 2006 to 2008. Her shell still hangs in our lab space.
 </div>
 
 ## SeaWolf I
