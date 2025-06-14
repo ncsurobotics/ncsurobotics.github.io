@@ -6,12 +6,29 @@ permalink: /seawolves/seawolfVIII/index.html
 layout: page
 ---
 
+<!-- Import the google model view component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+<!-- Use it to show seawolfVIII -->
+<model-viewer 
+  alt="3D model of Sea Wolf VIII"
+  src="/assets/cad/seawolfviii.glb"
+  shadow-intensity="1"
+  camera-controls
+  auto-rotate
+  style="width: 100%; height: 300px;"
+  camera-orbit="25deg 60deg 1.5m">
+</model-viewer>
+
+<p class="text-center"><i>With 6DOF movement and a full complement of software and hardware systems, SeaWolf VIII is AquaPack's most advanced AUV platform</i></p>
+
 <h2>A Testament to Iterative Design</h2>
 
 <div class="grid" data-layout="50-50">
 The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design.
 {% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
 </div>
+
 
 {% set itemList = collections.swVIIImech%}
 
