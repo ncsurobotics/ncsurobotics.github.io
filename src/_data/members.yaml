@@ -14,7 +14,7 @@
   platforms:
     linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
   info:
-    - 4th Year Undergraduate Student
+    - 3rd Year Undergraduate Student
     - Mechanical Engineering
 
 # Abhi Poosarla
@@ -53,7 +53,7 @@
   teams: 
     - Electrical
   info:
-    - 1st Year Master's Student
+    - 1st year Master's Student
     - Electrical Engineering
 
 # Achyuta Kannan
@@ -109,7 +109,7 @@
     linkedin: https://www.linkedin.com/in/alexandriaepley/
     github: https://github.com/aepley0844
   info:
-    - 3nd Year Undergraduate Student
+    - 2nd Year Undergraduate Student
     - Mechanical Engineering
     - Incoming Mechanical Team Lead
 
@@ -147,7 +147,7 @@
   info:
     - 1st Year Undergraduate Student
     - Mechanical Engineering & Economics
-  
+
 # Ashton Henderlite
 - firstName: Ashton
   lastName: Henderlite
@@ -379,7 +379,6 @@
   info:
     - 1st Year Undergraduate Student	
     - Computer Engineering & Computer Science
-    - Incoming Software Team Lead
 
 # Spencer mol
 - firstName: Spencer
