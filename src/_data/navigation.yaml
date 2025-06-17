@@ -2,11 +2,14 @@ top:
   - text: Members
     url: /members/
 
-  - text: SeaWolf VIII
-    url: /seawolves/seawolfVIII/
+  - text: SeaWolves
+    url: #
+    submenu:
+      - text: SeaWolf VIII
+        url: /seawolves/seawolfVIII/
 
-  - text: Past SeaWolves
-    url: /seawolves/pastSeawolves/
+      - text: Past SeaWolves
+        url: /seawolves/pastSeawolves/
 
   - text: Documentation
     url: /documentation/
