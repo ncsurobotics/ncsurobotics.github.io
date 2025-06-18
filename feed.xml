@@ -4,12 +4,20 @@
   <subtitle>Updates on competition and robot development</subtitle>
   <link href="https://ncsurobotics.github.io/feed.xml" rel="self" />
   <link href="https://ncsurobotics.github.io/" />
-  <updated>2025-06-18T04:07:02Z</updated>
+  <updated>2025-06-18T22:47:53Z</updated>
   <id>https://ncsurobotics.github.io/</id>
   <author>
     <name>AquaPack Robotics</name>
   </author>
 	<entry>
+      <title>SolarPack and AquaPack Mixer</title>
+      <link href="https://ncsurobotics.github.io/blog/solarpack-and-aquapack-mixer/" />
+      <updated>2024-11-09T00:00:00Z</updated>
+      <id>https://ncsurobotics.github.io/blog/solarpack-and-aquapack-mixer/</id>
+      <content type="html">
+				&lt;figure slot=&quot;image&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://ncsurobotics.github.io/assets/images/sw8_robosub23-650w.avif 650w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-960w.avif 960w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-1400w.avif 1400w&quot; sizes=&quot;auto&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://ncsurobotics.github.io/assets/images/sw8_robosub23-650w.webp 650w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-960w.webp 960w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-1400w.webp 1400w&quot; sizes=&quot;auto&quot;&gt;&lt;source type=&quot;image/jpeg&quot; srcset=&quot;https://ncsurobotics.github.io/assets/images/sw8_robosub23-650w.jpeg 650w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-960w.jpeg 960w, https://ncsurobotics.github.io/assets/images/sw8_robosub23-1400w.jpeg 1400w&quot; sizes=&quot;auto&quot;&gt;&lt;img src=&quot;https://ncsurobotics.github.io/assets/images/sw8_robosub23-1400w.jpeg&quot; width=&quot;1400&quot; height=&quot;653&quot; alt=&quot;SeaWolf VIII in the water at NIWC Pacfic Transdec&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; eleventy:ignore&gt;&lt;/picture&gt;&lt;figcaption&gt;SeaWolf VIII in the water at NIWC Pacfic Transdec&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;Testing the solarpack mixer website.&lt;/p&gt;
+ 			</content>
+    </entry><entry>
       <title>RoboSub 2023</title>
       <link href="https://ncsurobotics.github.io/blog/robosub-2023/" />
       <updated>2023-10-11T00:00:00Z</updated>

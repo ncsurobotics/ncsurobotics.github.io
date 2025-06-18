@@ -11,6 +11,13 @@
     }
   ],
   "items": [{
+      "id": "https://ncsurobotics.github.io/blog/solarpack-and-aquapack-mixer/",
+      "url": "https://ncsurobotics.github.io/blog/solarpack-and-aquapack-mixer/",
+      "title": "SolarPack and AquaPack Mixer",
+      "content_html": "<figure slot=\"image\"><picture><source type=\"image/avif\" srcset=\"/assets/images/sw8_robosub23-650w.avif 650w, /assets/images/sw8_robosub23-960w.avif 960w, /assets/images/sw8_robosub23-1400w.avif 1400w\" sizes=\"auto\"><source type=\"image/webp\" srcset=\"/assets/images/sw8_robosub23-650w.webp 650w, /assets/images/sw8_robosub23-960w.webp 960w, /assets/images/sw8_robosub23-1400w.webp 1400w\" sizes=\"auto\"><source type=\"image/jpeg\" srcset=\"/assets/images/sw8_robosub23-650w.jpeg 650w, /assets/images/sw8_robosub23-960w.jpeg 960w, /assets/images/sw8_robosub23-1400w.jpeg 1400w\" sizes=\"auto\"><img src=\"/assets/images/sw8_robosub23-1400w.jpeg\" width=\"1400\" height=\"653\" alt=\"SeaWolf VIII in the water at NIWC Pacfic Transdec\" loading=\"lazy\" decoding=\"async\" eleventy:ignore></picture><figcaption>SeaWolf VIII in the water at NIWC Pacfic Transdec</figcaption></figure><p>Testing the solarpack mixer website.</p>",
+      "date_published": "2024-11-09T00:00:00Z"
+    }
+    ,{
       "id": "https://ncsurobotics.github.io/blog/robosub-2023/",
       "url": "https://ncsurobotics.github.io/blog/robosub-2023/",
       "title": "RoboSub 2023",
