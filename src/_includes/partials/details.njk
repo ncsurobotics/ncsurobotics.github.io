@@ -3,7 +3,7 @@
     <button id="expandAll" class="button" data-small-button>{{ meta.details.expand }}</button>
     <button id="collapseAll" class="button" data-small-button>{{ meta.details.collapse }}</button>
   </div>
-  {%- for item in itemList | alphabetic -%}
+  {%- for item in itemList | alphabetic | sort(false, true, 'data.sort') -%}
     <details id="{{ item.data.title | slugify }}">
       <summary>{{ item.data.title }}</summary>
       {{- item.templateContent | safe -}}
