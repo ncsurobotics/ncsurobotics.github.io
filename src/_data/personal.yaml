@@ -6,3 +6,7 @@ address: |-
 platforms:
   github: 'https://github.com/ncsurobotics/'
   linkedin: 'https://www.linkedin.com/company/aquapack-robotics'
+advisor:
+  name: John Muth
+  profile: https://ece.ncsu.edu/people/muth/
+  email: muth@ncsu.edu
