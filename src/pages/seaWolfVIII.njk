@@ -22,19 +22,24 @@ layout: page
 
 <p class="text-center"><i>With 6DOF movement and a full complement of software and hardware systems, SeaWolf VIII is AquaPack's most advanced AUV platform</i></p>
 
-<h2>A Testament to Iterative Design</h2>
-
-<div class="grid" data-layout="50-50">
-The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design.
+<div class="grid" data-layout="thirds">
+{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
 {% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
 </div>
 
+<div>
+<p>
+  The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design. SWVIII's systems are divided into <b>Mechanical</b>, <b>Electrical</b>, and <b>Software</b> subgroups.
+</p>
+</div>
 
 {% set itemList = collections.swVIIImech%}
 
   <div class="full | region">
     <div class="wrapper flow prose">
       <h2>Mechanical</h2>
+      <p>SeaWolf's Mechanical systems include a <b>multi-hull waterproofing solution</b> allowing power passthrough to it's <b>omnidirectional thrusters</b>, as well as a suite of manipulation systems, including <b>ratcheting torpedo launchers</b> and a <b>ball dropper</b> that allow SeaWolf to interact with it's enviroment. </p>
       {% include 'partials/details.njk' %}
     </div>
   </div>
