@@ -12,23 +12,34 @@ schema: BlogPosting
       {% image image, alt or "", credit, "eager", "feature" %}
     {% endif %}
 
-    <p class="meta | cluster gutter-xs-s">
-      <!-- draft status -->
-      {%- if draft -%}
-        <span class="button" data-small-button data-button-variant="tertiary">draft</span>
-      {%- endif %}
-      <!-- date -->
-      {% set definedDate = date %} {% include "partials/date.njk" %}
-      {%
-        if tags.length >
-        1
-      %}
-        <!-- tags -->
-        {% for tag in tags %}{% if tag != "posts" %}
-          <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> {{ tag }} </a>
-        {% endif %}{% endfor %}
+    {% set member = members[author] %}
+    <div class="meta | cluster gutter-xs-s">
+      {% if author %}
+        {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
+        {% image "/assets/images/members/" + imageName, "Author Photo", null, "lazy", "author" %}
       {% endif %}
-    </p>
+      <div>
+        {% if author %}
+          <p>
+              By {{ member.firstName }} {{ member.lastName }}
+          </p>
+        {% endif %}
+        <p class="cluster">
+          <!-- draft status -->
+          {%- if draft -%}
+            <span class="button" data-small-button data-button-variant="tertiary">draft</span>
+          {%- endif %}
+          <!-- date -->
+          {% set definedDate = date %} {% include "partials/date.njk" %}
+          {% if tags.length > 1 %}
+            <!-- tags -->
+            {% for tag in tags %}{% if tag != "posts" %}
+              <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> {{ tag }} </a>
+            {% endif %}{% endfor %}
+          {% endif %}
+        </p>
+      </div>
+    </div>
 
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}

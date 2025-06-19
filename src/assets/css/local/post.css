@@ -37,3 +37,11 @@
 .post .meta {
   font-size: var(--size-step-min-1);
 }
+
+.author img {
+  aspect-ratio: 1;
+  border-radius: calc(infinity * 1px);
+  object-fit: cover;
+  height: 4rem;
+  width: auto;
+}
