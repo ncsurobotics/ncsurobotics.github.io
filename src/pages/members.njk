@@ -3,144 +3,20 @@ layout: base
 permalink: /members/index.html
 title: 'Members'
 ---
-{# <div class="wrapper"> #}
-  {# {% set leadership =  Object.entries(members) | selectattr('leadership') | rejectattr('alum') %} #}
-  {# {% if leadership.length > 0 %} #}
-    {# <div class="region flow"> #}
-      {# <h2>Leadership</h2> #}
-      {# <div class="grid" data-layout="thirds"> #}
-        {# {% asyncEach member in leadership %} #}
-          {# <custom-card img-square> #}
-            {# {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %} #}
-            {# {% image "/assets/images/members/" + imageName %} #}
-          	{# <h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2> #}
-            {# {% if member.position %} #}
-             	{# <h3 slot="subtitle">{{ member.position }}</h3> #}
-            {# {% endif %} #}
-            {# {% if member.teams.length > 0 %} #}
-              {# <div slot="tag" webc:nokeep> #}
-                {# {% asyncEach team in member.teams %} #}
-                  {# <span class="button" data-small-button>{{ team }}</span> #}
-                {# {% endeach %} #}
-              {# </div> #}
-            {# {% endif %} #}
-            {# {% if member.info.length > 0 %} #}
-            	{# <p slot="content"> #}
-              {# {% asyncEach item in member.info %} #}
-                {# {{ item  }}<br> #}
-              {# {% endeach %} #}
-              {# </p> #}
-            {# {% endif %} #}
-            {# <div slot="icons" webc:nokeep> #}
-              {# {% if member.platforms %} #}
-                {# {% for key, value in member.platforms %} #}
-                  {# {% if value != "" %} #}
-                    {# <!-- regular platforms --> #}
-                    {# <a class="no-indicator" href="{{ value }}" rel="me"> #}
-                      {# <span class="visually-hidden">{{ key | capitalize }}</span> #}
-                      {# {% svg 'platform/' + key %} #}
-                    {# </a> #}
-                  {# {% endif %} #}
-                {# {% endfor %} #}
-              {# {% endif %} #}
-            {# </div> #}
-          {# </custom-card> #}
-        {# {% endeach %} #}
-      {# </div> #}
-    {# </div> #}
-  {# {% endif %} #}
-  {# {% set normal_members =  members | rejectattr('leadership') | rejectattr('alum') %} #}
-  {# {% if normal_members.length > 0 %} #}
-    {# <div class="region flow"> #}
-      {# <h2>Members</h2> #}
-      {# <div class="grid" data-layout="thirds"> #}
-        {# {% asyncEach member in normal_members %} #}
-          {# <custom-card img-square> #}
-            {# {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %} #}
-            {# {% image "/assets/images/members/" + imageName %} #}
-          	{# <h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2> #}
-            {# {% if member.position %} #}
-             	{# <h3 slot="subtitle">{{ member.position }}</h3> #}
-            {# {% endif %} #}
-            {# {% if member.teams.length > 0 %} #}
-              {# <div slot="tag" webc:nokeep> #}
-                {# {% asyncEach team in member.teams %} #}
-                  {# <span class="button" data-small-button>{{ team }}</span> #}
-                {# {% endeach %} #}
-              {# </div> #}
-            {# {% endif %} #}
-            {# {% if member.info.length > 0 %} #}
-            	{# <p slot="content"> #}
-              {# {% asyncEach item in member.info %} #}
-                {# {{ item  }}<br> #}
-              {# {% endeach %} #}
-              {# </p> #}
-            {# {% endif %} #}
-            {# <div slot="icons" webc:nokeep> #}
-              {# {% if member.platforms %} #}
-                {# {% for key, value in member.platforms %} #}
-                  {# {% if value != "" %} #}
-                    {# <!-- regular platforms --> #}
-                    {# <a class="no-indicator" href="{{ value }}" rel="me"> #}
-                      {# <span class="visually-hidden">{{ key | capitalize }}</span> #}
-                      {# {% svg 'platform/' + key %} #}
-                    {# </a> #}
-                  {# {% endif %} #}
-                {# {% endfor %} #}
-              {# {% endif %} #}
-            {# </div> #}
-          {# </custom-card> #}
-        {# {% endeach %} #}
-      {# </div> #}
-    {# </div> #}
-  {# {% endif %} #}
-  {# {% set alum =  members | selectattr('alum') %} #}
-  {# {% if alum.length > 0 %} #}
-    {# <div class="region flow"> #}
-      {# <h2>Alum</h2> #}
-      {# <div class="grid" data-layout="thirds"> #}
-        {# {% asyncEach member in alum %} #}
-          {# <custom-card img-square> #}
-            {# {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %} #}
-            {# {% image "/assets/images/members/" + imageName %} #}
-          	{# <h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2> #}
-            {# {% if member.position %} #}
-             	{# <h3 slot="subtitle">{{ member.position }}</h3> #}
-            {# {% endif %} #}
-            {# {% if member.teams.length > 0 %} #}
-              {# <div slot="tag" webc:nokeep> #}
-                {# {% asyncEach team in member.teams %} #}
-                  {# <span class="button" data-small-button>{{ team }}</span> #}
-                {# {% endeach %} #}
-              {# </div> #}
-            {# {% endif %} #}
-            {# {% if member.info.length > 0 %} #}
-            	{# <p slot="content"> #}
-              {# {% asyncEach item in member.info %} #}
-                {# {{ item  }}<br> #}
-              {# {% endeach %} #}
-              {# </p> #}
-            {# {% endif %} #}
-            {# <div slot="icons" webc:nokeep> #}
-              {# {% if member.platforms %} #}
-                {# {% for key, value in member.platforms %} #}
-                  {# {% if value != "" %} #}
-                    {# <!-- regular platforms --> #}
-                    {# <a class="no-indicator" href="{{ value }}" rel="me"> #}
-                      {# <span class="visually-hidden">{{ key | capitalize }}</span> #}
-                      {# {% svg 'platform/' + key %} #}
-                    {# </a> #}
-                  {# {% endif %} #}
-                {# {% endfor %} #}
-              {# {% endif %} #}
-            {# </div> #}
-          {# </custom-card> #}
-        {# {% endeach %} #}
-      {# </div> #}
-    {# </div> #}
-  {# {% endif %} #}
-{# </div> #}
+<div class="wrapper">
+  {% set subsectionTitle = "Leadership" %}
+  {% set selectedMembers =  members | d2a | selectattr('leadership') | rejectattr('alum') %}
+  {% include 'partials/members-subsection.njk' %}
 
-{# {% css "local" %} #}
-  {# {% include "css/custom-card.css" %} #}
-{# {% endcss %} #}
+  {% set subsectionTitle = "Members" %}
+  {% set selectedMembers =  members | d2a | rejectattr('leadership') | rejectattr('alum') %}
+  {% include 'partials/members-subsection.njk' %}
+
+  {% set subsectionTitle = "Alum" %}
+  {% set selectedMembers =  members | d2a | selectattr('alum') %}
+  {% include 'partials/members-subsection.njk' %}
+</div>
+
+{% css "local" %}
+  {% include "css/custom-card.css" %}
+{% endcss %}
