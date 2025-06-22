@@ -9,7 +9,8 @@ layout: page
 ## [Documentation Pages](https://ncsurobotics.github.io/Documentation/)
 
 ## Technical Design Reports
-- [RoboSub 2023 - SeaWolf VIII](https://drive.google.com/file/d/13QfWaQL2M9-4tukr09XmOJh3mMkB5a1d/view)
+- [RoboSub 2024 - SeaWolfVIII](https://robonation.org/app/uploads/sites/4/2024/07/RS24_TDR_NorthCarolinaState-compressed.pdf)
+- [RoboSub 2023 - SeaWolf VIII](https://robonation.org/app/uploads/sites/4/2023/06/TDR_NCSU_AquaPackRobotics_RS2023-compressed.pdf)
 - [RoboSub 2022 - SeaWolf VIII](https://robonation.org/app/uploads/sites/4/2022/06/urc-at-ncstateuniversity_TDR_RS22.pdf)
 - [RoboSub 2021 - SeaWolf VIII](https://drive.google.com/file/d/1KUi1Un857L_O6qmVsBNAIGVJ7nBoSR9B/view)
 - [RoboSub 2016 - SeaWolf VI](https://drive.google.com/file/d/195ZIoEu4j-tH9yyKpxV_kEGFwQA2cyXm/view)
