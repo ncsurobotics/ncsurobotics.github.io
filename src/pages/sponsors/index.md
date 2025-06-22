@@ -31,15 +31,15 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/caterpillar-logo-min", null, "sponsor-logo" %}
-<h3>NC State University Student Government Appropriations</h3>
+<h3>NCSU Student Gov.  Appropriations</h3>
 <p></p>
 </div>
 
 ## Silver Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/timken-logo", null, "sponsor-logo" %}
-<p></p>
-<p></p>
+{% svg "sponsors/rooh-logo", null, "sponsor-logo" %}
+{% svg "sponsors/go-fish-logo-min", null, "sponsor-logo" %}
 </div>
 
 ## Software Sponsors
