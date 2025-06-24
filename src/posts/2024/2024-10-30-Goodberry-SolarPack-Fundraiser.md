@@ -27,5 +27,5 @@ Even though we sacrificed some regular work time, the fundraiser ended up being 
 Also, fun fact: Goodberry’s only has locations in North Carolina and Australia. Who knew frozen custard had such an exclusive range?
 
 We’re already looking forward to hosting more fundraisers! What a sweet success (pun intended)! Go Pack! 🐺
-{% set alt = "From left to right, Jack F. and Jason L." %}
+{% set alt = "From left to right, Reilly W., Jack F., and Jason L." %}
 {% image "/assets/images/blog/goodberrys_jack_friends.png", alt, alt %}
