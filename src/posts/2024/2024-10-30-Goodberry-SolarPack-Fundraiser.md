@@ -15,7 +15,7 @@ author: sahitiMudireddy
 AquaPack teamed up with SolarPack, NC State’s solar vehicle team, for a deliciously and fun fundraiser at Goodberry’s Frozen Custard. As two engineering-focused student organizations, it was a great opportunity to collaborate outside the lab and raise some much-needed funds for our teams.
 
 {% set alt = "AquaPack members, from left to right, Ankitha L., Elizabeth G., and Deborah K., in front of Goodberry's" %}
-{% image "/assets/images/blog/goodberry_elizaebeth_friend.png", alt, alt %}
+{% image "/assets/images/blog/goodberry_elizabeth_friend.png", alt, alt %}
 
 The fundraiser took place on a Monday evening from 5 to 9 p.m., which was perfect timing, as it replaced our usual general meeting and gave members a chance to relax, connect, and support the club in a different setting. Thanks to a few generous upperclassmen who volunteered to drive, all participating members were able to get to the event without any problems (huge shoutout to our upperclassmen who make our lives easier 🙌)!
 
