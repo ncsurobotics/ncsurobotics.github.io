@@ -23,9 +23,9 @@ layout: page
 <p class="text-center"><i>With 6DOF movement and a full complement of software and hardware systems, SeaWolf VIII is AquaPack's most advanced AUV platform</i></p>
 
 <div class="grid" data-layout="thirds">
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_front.jpg", "Front view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_iso.jpg", "Isometric view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_top.jpg", "Top view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
 </div>
 
 <div>
@@ -34,21 +34,21 @@ layout: page
 </p>
 </div>
 
+{% set itemList = collections.SWVIIIElectricalDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Electrical</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
 {% set itemList = collections.SWVIIIMechanicalDetailsCollection %}
 
   <div class="full | region">
     <div class="wrapper flow prose">
       <h2>Mechanical</h2>
       <p>SeaWolf's Mechanical systems include a <b>multi-hull waterproofing solution</b> allowing power passthrough to it's <b>omnidirectional thrusters</b>, as well as a suite of manipulation systems, including <b>ratcheting torpedo launchers</b> and a <b>ball dropper</b> that allow SeaWolf to interact with it's enviroment. </p>
-      {% include 'partials/details.njk' %}
-    </div>
-  </div>
-
-{% set itemList = collections.SWVIIIElectricalDetailsCollection %}
-
-  <div class="full | region">
-    <div class="wrapper flow prose">
-      <h2>Electrical</h2>
       {% include 'partials/details.njk' %}
     </div>
   </div>
