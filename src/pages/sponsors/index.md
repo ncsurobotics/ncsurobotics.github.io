@@ -31,7 +31,7 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/caterpillar-logo-min", null, "sponsor-logo" %}
-<h3>NCSU Student Gov.  Appropriations</h3>
+<h3></h3>
 <p></p>
 </div>
 
