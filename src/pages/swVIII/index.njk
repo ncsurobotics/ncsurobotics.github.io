@@ -53,6 +53,16 @@ layout: page
     </div>
   </div>
 
+{% set itemList = collections.SWVIIIElectricalDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Electrical</h2>
+      <p>SeaWolf VIII's electrical system puts modularity at the forefront and can be broadly broken down into three main functions: <b>Power</b>, <b>Control</b>, and <b>Logic</b>. </p>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
   {% set itemList = collections.SWVIIISoftwareDetailsCollection %}
 
   <div class="full | region">
