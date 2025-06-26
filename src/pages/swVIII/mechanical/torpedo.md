@@ -2,4 +2,4 @@
 title: Ratcheting Torpedo Launcher
 ---
 
-SWVIII's Torpedo system enables it to accurately file two torpedoes through rings or at targets in order to acquire points. A ratcheting mechanism is used to retracts a spring before SWVIII is placed in the water. The spring is released by a lever arm connected to a waterproofed servo motor, allowing SeaWolf to autonomously fire the torpedoes at its desired target
+SeaWolf's electro-mechanical torpedo launcher system consists of two identical launcher bodies each housing a watertight servo motor capable of actuating a lever arm holding a spring in compression until release. Several FDM printed projectiles were designed, with the chosen fusiform shape performing most favorably. The design was chosen due its simplicity, which minimized the amount of electrical infrastructure needed and enabled iterative prototyping allowing for rapid development using an FDM printer while still meeting task requirements. The spring is drawn back using a ratcheting mechanism that allows for use of a more powerful spring than a hand-drawn system.

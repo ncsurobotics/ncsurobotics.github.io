@@ -23,9 +23,9 @@ layout: page
 <p class="text-center"><i>With 6DOF movement and a full complement of software and hardware systems, SeaWolf VIII is AquaPack's most advanced AUV platform</i></p>
 
 <div class="grid" data-layout="thirds">
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
-{% image "/assets/images/seawolves/seaWolfVIII.png", "SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_front.jpg", "Front view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_iso.jpg", "Isometric view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swVIII/swVIII_top.jpg", "Top view of SeaWolf VIII, the latest iteration of the SeaWolf AUV platform" %}
 </div>
 
 <div>
@@ -33,6 +33,15 @@ layout: page
   The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design. SWVIII's systems are divided into <b>Mechanical</b>, <b>Electrical</b>, and <b>Software</b> subgroups.
 </p>
 </div>
+
+{% set itemList = collections.SWVIIIElectricalDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Electrical</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
 
 {% set itemList = collections.SWVIIIMechanicalDetailsCollection %}
 
