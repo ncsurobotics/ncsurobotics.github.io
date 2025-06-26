@@ -6,7 +6,11 @@ permalink: /sponsors/index.html
 description: Current sponsors
 layout: page
 ---
-We are incredibly greatful for our many donors and corporate sponsors! In particular, we'd like to thank Alex Pendergast and Christopher Mori for their indvidual donations. We'd also like to thank the North Carolina State University Club for graciously allowing the use of their pool for testing this past summer.
+
+We extend our heartfelt gratitude to the generous individuals and organizations who make our mission possible. We are also deeply thankful to the North Carolina State University Club for generously providing access to their outdoor pool, which has been an invaluable resource for our team’s summer testing sessions.
+
+To all of our donors and sponsors- thank you for investing in the future of STEM education. Your partnership with AquaPack Robotics helps drive curiosity, creativity, and community forward.
+
 > Sponsorship Tiers
 >
 > Interested in sponsoring us? See our sponsorship tiers [here](/sponsors/tiers.html)
