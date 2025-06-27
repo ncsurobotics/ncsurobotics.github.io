@@ -21,8 +21,12 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/analog-devices-logo-min", null, "sponsor-logo" %}
 {% svg "sponsors/bae-systems-logo-min", null, "sponsor-logo" %}
-<h3>Engineer Your Experience @NC State University</h3>
+{% svg "sponsors/cadence", null, "sponsor-logo" %}
+{% svg "sponsors/EYE", null, "sponsor-logo" %}
 </div>
+
+
+<!--
 
 ## Platinum Sponsors
 <div class="grid" data-layout="thirds">
@@ -30,6 +34,8 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 <p></p>
 <p></p>
 </div>
+
+-->
 
 ## Gold Sponsors
 
@@ -42,14 +48,15 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 ## Silver Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/timken-logo", null, "sponsor-logo" %}
-{% svg "sponsors/rooh-logo", null, "sponsor-logo" %}
-{% svg "sponsors/go-fish-logo-min", null, "sponsor-logo" %}
+{% svg "sponsors/rooh", null, "sponsor-logo" %}
+{% svg "sponsors/Go_Fish", null, "sponsor-logo" %}
+<h3>Alex Pendergast - Individual Contribution</h3>
 </div>
 
 ## Software Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/onshape-logo-min", null, "sponsor-logo" %}
-{% svg "sponsors/altium-logo", null, "sponsor-logo" %}
+{% svg "sponsors/solidworks-logo", null, "sponsor-logo" %}
 <p></p>
 </div>
 
