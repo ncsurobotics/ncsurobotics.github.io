@@ -21,8 +21,8 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/analog-devices-logo-min", null, "sponsor-logo" %}
 {% svg "sponsors/bae-systems-logo-min", null, "sponsor-logo" %}
-{% svg "sponsors/cadence", null, "sponsor-logo" %}
-{% svg "sponsors/EYE", null, "sponsor-logo" %}
+{% svg "sponsors/cadence_min", null, "sponsor-logo" %}
+{% svg "sponsors/EYE_min", null, "sponsor-logo" %}
 </div>
 
 
@@ -48,8 +48,8 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 ## Silver Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/timken-logo", null, "sponsor-logo" %}
-{% svg "sponsors/rooh", null, "sponsor-logo" %}
-{% svg "sponsors/Go_Fish", null, "sponsor-logo" %}
+{% svg "sponsors/rooh_min", null, "sponsor-logo" %}
+{% svg "sponsors/go_fish_min", null, "sponsor-logo" %}
 <h3>Alex Pendergast - Individual Contribution</h3>
 </div>
 
