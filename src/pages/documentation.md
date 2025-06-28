@@ -6,7 +6,14 @@ permalink: /documentation/index.html
 description: Documentation
 layout: page
 ---
-## [Documentation Pages](https://ncsurobotics.github.io/Documentation/)
+
+<blockquote class="flow">
+        <p>Effective documentation is essential for any organization, and AquaPack is no exception. By maintaining documentation on the how and why of SeaWolf's systems, we enable nesw members to quickly familiarize themselves with our robots, and enable experience members to draw on past idea's and more effectively troubleshoot errors.*</p>
+</blockquote>
+
+## [SeaWolf VIII](/seawolves/seawolfVIII/index/)
+
+## [Internal Wiki](https://ncsurobotics.github.io/Documentation/)
 
 ## Technical Design Reports
 - [RoboSub 2024 - SeaWolfVIII](https://robonation.org/app/uploads/sites/4/2024/07/RS24_TDR_NorthCarolinaState-compressed.pdf)
