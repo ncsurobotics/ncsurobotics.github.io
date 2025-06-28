@@ -6,7 +6,11 @@ permalink: /sponsors/index.html
 description: Current sponsors
 layout: page
 ---
-We are incredibly greatful for our many donors and corporate sponsors! In particular, we'd like to thank Alex Pendergast and Christopher Mori for their indvidual donations. We'd also like to thank the North Carolina State University Club for graciously allowing the use of their pool for testing this past summer.
+
+We extend our heartfelt gratitude to the generous individuals and organizations who make our mission possible. We are also deeply thankful to the North Carolina State University Club for generously providing access to their outdoor pool, which has been an invaluable resource for our team’s summer testing sessions.
+
+To all of our donors and sponsors- thank you for investing in the future of STEM education. Your partnership with AquaPack Robotics helps drive curiosity, creativity, and community forward.
+
 > Sponsorship Tiers
 >
 > Interested in sponsoring us? See our sponsorship tiers [here](/sponsors/tiers.html)
@@ -17,8 +21,12 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/analog-devices-logo-min", null, "sponsor-logo" %}
 {% svg "sponsors/bae-systems-logo-min", null, "sponsor-logo" %}
-<h3>Engineer Your Experience @NC State University</h3>
+{% svg "sponsors/cadence_min", null, "sponsor-logo" %}
+{% svg "sponsors/EYE_min", null, "sponsor-logo" %}
 </div>
+
+
+<!--
 
 ## Platinum Sponsors
 <div class="grid" data-layout="thirds">
@@ -26,6 +34,8 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 <p></p>
 <p></p>
 </div>
+
+-->
 
 ## Gold Sponsors
 
@@ -38,14 +48,15 @@ We are incredibly greatful for our many donors and corporate sponsors! In partic
 ## Silver Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/timken-logo", null, "sponsor-logo" %}
-{% svg "sponsors/rooh-logo", null, "sponsor-logo" %}
-{% svg "sponsors/go-fish-logo-min", null, "sponsor-logo" %}
+{% svg "sponsors/rooh_min", null, "sponsor-logo" %}
+{% svg "sponsors/go_fish_min", null, "sponsor-logo" %}
+<h3>Alex Pendergast - Individual Contribution</h3>
 </div>
 
 ## Software Sponsors
 <div class="grid" data-layout="thirds">
 {% svg "sponsors/onshape-logo-min", null, "sponsor-logo" %}
-{% svg "sponsors/altium-logo", null, "sponsor-logo" %}
+{% svg "sponsors/solidworks-logo", null, "sponsor-logo" %}
 <p></p>
 </div>
 
