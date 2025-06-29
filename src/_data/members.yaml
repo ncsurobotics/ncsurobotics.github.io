@@ -11,10 +11,11 @@ elizabethGillikin:
   teams:
     - Admin
     - Mechanical
+    - Business
   platforms:
     linkedin: https://www.linkedin.com/in/elizabeth-gillikin/
   info:
-    - 3rd Year Undergraduate Student
+    - 4th Year Undergraduate Student
     - Mechanical Engineering
 
 abhiPoosarla:
@@ -247,6 +248,9 @@ jackFetkovich:
   lastName: Fetkovich
   position: Electrical Team Lead
   leadership: true
+  platforms:
+    linkedin: https://www.linkedin.com/in/jack-fetkovich
+    github: https://github.com/jackfetkovich
   teams: 
     - Electrical
   info:

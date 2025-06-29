@@ -14,7 +14,7 @@ Last week, AquaPack headed to Durham, NC for the 11th Annual Bull City FIRST Leg
 
 A total of 24 teams attended the scrimmage, with students ranging from 9-14 years old. Before bringing their bots to the field, each team presented on a research project that addressed an ocean-related problem via underwater robotics. Three of our team members volunteered as judges for this part of the day and were able to ask thought-provoking questions to each group of presenters as they displayed their hard-earned results and ideas.  
 
-{% set alt = "Referees and students surround their tables and robots- The game is on!" %}
+{% set alt = "Referees and students surround their tables and robots- the game is on!" %}
 {% image "/assets/images/blog/fll-comp.jpg", alt, alt %}
 
 After team presentations, the hands-on competition began! Teams prepared LEGO® robots, that they had built and programmed, to go head-to-head on one of four playing fields as they worked their way up to determine the champion of the day. While the teams were busy competing, AquaPack was busy setting up a table to display our current competition robot, SeaWolf VIII, along with some of our most interesting subsystems and internal components. For the rest of the day, our AquaPack members were busy speaking to the teams that were waiting for their turn on the playing field (as well as some of their interested parents, siblings, and friends). Everyone asked great questions, and the enthusiasm of the students towards SeaWolf was unmatched. Our email was handed out to several teams who have since reached out to us for mentorship or research-related inquiries, and our volunteers on-site even gave advice to some very forward-looking students about college and life at NC State!
