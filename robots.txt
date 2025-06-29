@@ -13,4 +13,4 @@ Disallow: /
 User-agent: Omgilibot 
 Disallow: / 
 
-Sitemap: https://ncsurobotics.github.io/sitemap.xml
+Sitemap: https://aquapackrobotics.org/sitemap.xml
