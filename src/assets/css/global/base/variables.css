@@ -32,6 +32,18 @@
     var(--color-tertiary) 0 100%
   );
 
+  --gradient-modern: repeating-linear-gradient(315deg, #0084732e 92%, #073AFF00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),
+    radial-gradient(50% 75% at 90% 20%, #FF0000FF 0%, #073AFF00 100%),
+    radial-gradient(50% 50% at 5% 85%, #FF0000FF 0%, #073AFF00 100%),
+    radial-gradient(160% 154% at 711% -303%, #01AD95FF 0%, #4E92B0FF 100%);
+
+  --gradient-modern-subdued: repeating-linear-gradient(315deg, #0084732e 92%, #073AFF00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),
+    radial-gradient(50% 75% at 100% 10%, #ff0000FF 0%, #073AFF00 100%),
+    radial-gradient(50% 75% at 10% 100%, #ff0000FF 0%, #073AFF00 100%),
+    radial-gradient(160% 154% at 711% -303%, #01AD95FF 0%, #4E92B0FF 100%);
+
   --color-light: white;
   --color-dark: var(--color-gray-900);
   --color-mid: var(--color-gray-400);
