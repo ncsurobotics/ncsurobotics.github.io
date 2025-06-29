@@ -10,7 +10,7 @@
           <button
             data-submenu-toggle
             aria-expanded="false"
-            aria-labelledby="mainnav-{{ loop.index }}"
+            aria-label="{{ item.text }} {{ meta.navigation.ariaSub }}"
             aria-controls="mainnav-{{ loop.index }}-sub"
           >
             {{ item.text }} {% svg "misc/chev-down" %}
