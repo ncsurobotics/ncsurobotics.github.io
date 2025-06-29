@@ -18,12 +18,12 @@ AquaPack was excited to kick off the semester with a professional development ev
 
 Throughout the workshop, our guests offered resume tips, job application strategies, and even individualized feedback to students. The session saw over 50 attendees, including a strong showing from first-year students and non-AquaPack members exploring internship and co-op opportunities. This event was widely advertised around campus and was open to all majors and years. We're especially proud to have created a space that was both informative and accessible. 
 
-{% set alt = "Atendees listening to presenters at the ADI workshop" %}
+{% set alt = "Attendees listening to presenters at the ADI workshop" %}
 {% image "/assets/images/blog/ADI_group.jpg", alt, alt %}
  
 Huge thanks to our guests from ADI for their time, wisdom, and willingness to help us out. This is the kind of support AquaPack wants to be able to provide to NC State students along side our industry sponsors. We hope to see even more alumni and industry friends at future events! Go Pack! 🐺
 
-{% set alt = "Atendees conversing with Hiring manager from ADI, Brain H., and amongst each other." %}
+{% set alt = "Attendees conversing with Hiring manager from ADI, Brain H., and amongst each other." %}
 {% image "/assets/images/blog/ADI_talking.jpg", alt, alt %}
 
 
