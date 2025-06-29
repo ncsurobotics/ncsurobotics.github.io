@@ -5,7 +5,7 @@
       {% asyncEach member in selectedMembers %}
         <custom-card img-square>
           {% set imageName = member.image | default(member.firstName + "-" + member.lastName + ".jpg") | default("member.svg", true) %}
-          {% image "/assets/images/members/" + imageName %}
+          {% image "/assets/images/members/" + imageName, "A photo of " + member.firstName + " " + member.lastName %}
         	<h2 slot="headline">{{ member.firstName }} {{ member.lastName }}</h2>
           {% if member.position %}
            	<h3 slot="subtitle">{{ member.position }}</h3>
