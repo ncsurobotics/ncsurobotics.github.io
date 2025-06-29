@@ -37,7 +37,7 @@ jobs:
 
       - name: Build
         env:
-          URL: https://ncsurobotics.github.io
+          URL: https://aquapackrobotics.org
         run: npm run build
 
       - name: Deploy
@@ -46,3 +46,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: aquapackrobotics.org
