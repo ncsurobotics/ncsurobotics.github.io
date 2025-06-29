@@ -25,6 +25,9 @@ top:
 
   - text: Blog
     url: /blog/
+    
+  - text: Search
+    url: /search/
 
 bottom:
   - text: Contact Us
