@@ -12,7 +12,17 @@ top:
         url: /seawolves/pastSeawolves/
 
   - text: Documentation
-    url: /documentation/
+    url: #
+    submenu:
+      - text: GitHub
+        url: https://github.com/ncsurobotics
+      
+      - text: Technical Design Reports
+        url: /tdrs/
+
+      - text: Dry Run Procedure
+        url: /dryrun/
+
 
   - text: Calendar
     url: /calendar/
