@@ -17,6 +17,9 @@ top:
       - text: GitHub
         url: https://github.com/ncsurobotics
       
+      - text: SeaWolf VIII
+        url: /seawolves/seawolfVIII/
+      
       - text: Technical Design Reports
         url: /tdrs/
 
