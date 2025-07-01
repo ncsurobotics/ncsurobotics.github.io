@@ -1,3 +1,121 @@
-@import 'markdown-it-github-alerts/styles/github-colors-light.css';
-@import 'markdown-it-github-alerts/styles/github-colors-dark-media.css';
-@import 'markdown-it-github-alerts/styles/github-base.css';
+.markdown-alert {
+  color: inherit;
+  padding: var(--space-s);
+  border-inline-start: 0.5rem solid;
+  font-size: var(--size-step-0);
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  align-items: center;
+  font-weight: var(--font-regular);
+  line-height: 1;
+  margin-bottom: var(--space-s)
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note :is(ul:not([class]):not([role=list]), ol) li::marker {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important :is(ul:not([class]):not([role=list]), ol) li::marker {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning :is(ul:not([class]):not([role=list]), ol) li::marker {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip :is(ul:not([class]):not([role=list]), ol) li::marker {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution :is(ul:not([class]):not([role=list]), ol) li::marker {
+  color: var(--color-caution);
+}
+
+/* Light theme */
+:root,
+:root[data-theme='light'] {
+  --color-note: #209fb5;
+  --color-tip: #40a02b;
+  --color-warning: #df8e1d;
+  --color-severe: #fe640b;
+  --color-caution: #d20f39;
+  --color-important: #8839ef;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #89b4fa;
+    --color-tip: #a6e3a1;
+    --color-warning: #f9e2af;
+    --color-severe: #fab387;
+    --color-caution: #f38ba8;
+    --color-important: #cba6f7;
+  }
+}
+:root[data-theme='dark'] {
+    --color-note: #89b4fa;
+    --color-tip: #a6e3a1;
+    --color-warning: #f9e2af;
+    --color-severe: #fab387;
+    --color-caution: #f38ba8;
+    --color-important: #cba6f7;
+}
