@@ -1,5 +1,6 @@
 ---
 title: Multi-Hull Waterproofing
+sort: 3
 ---
 
 SeaWolf makes use of three waterproof hulls, A cut-to size main hull with custom tapped endcaps that contains all of SeaWolfs electrical systems, and two Blue Robotics battery hulls that provide power to SeaWolfs systems.

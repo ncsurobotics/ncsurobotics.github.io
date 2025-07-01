@@ -1,5 +1,6 @@
 ---
 title: Ratcheting Torpedo Launcher
+sort: 1
 ---
 
 SeaWolf's electro-mechanical torpedo launcher system consists of two identical launcher bodies each housing a watertight servo motor capable of actuating a lever arm holding a spring in compression until release. Several FDM printed projectiles were designed, with the chosen fusiform shape performing most favorably. 
