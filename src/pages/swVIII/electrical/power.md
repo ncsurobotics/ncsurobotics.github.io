@@ -4,11 +4,11 @@ sort: 0
 ---
 
 #### Batteries
-!["Battery"](/assets/images/electrical/battery.jpg){ .w-[40vw] }
+![Battery](/assets/images/electrical/battery.jpg){ .w-[40vw] }
 
 SW8 utilizes two 4s 10,000mAH LiPo batteries to power the entire system. The LiPo chemistry was chosen for its high energy density and relatively constant voltage output throughout the discharge cycle.
 #### Load Balancing Board (LBB)
-!["LBB"](/assets/images/electrical/lbb.png){ .w-[40vw] }
+![LBB](/assets/images/electrical/lbb.png){ .w-[40vw] }
 
 The use of two batteries enables high performance output for longer periods of time. However, the batteries cannot simply be wired in parallel due to safety concerns. The Load Balancing Board uses an ideal diode controller to safely split the robot's current draw between the batteries.
 
