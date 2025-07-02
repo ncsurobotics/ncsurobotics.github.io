@@ -14,3 +14,5 @@ Mechanical team works on projects that include grame and structural support desi
 ## Software
 Software team works on projects that include computer vision and machine learning, software architecture, user interface (UI), software packaging, and system communications. These projects require technical skills such as programming, state machine design, and unit testing.
 
+## Business
+Business team works on projects that include social media, outreach, sponsorship opportunities, event planning, and advertising. These projects require skills such as graphic design, communication, business acumen, and creative thinking.
