@@ -11,6 +11,7 @@ layout: page
         <p>Effective documentation is essential for any organization, and AquaPack is no exception. By maintaining documentation on the how and why of SeaWolf's systems, we enable new members to quickly familiarize themselves with our robots, and enable experience members to draw on past idea's and more effectively troubleshoot errors.*</p>
 </blockquote>
 
+- [Robosub 2025 - SeaWolfVIII](https://drive.google.com/file/d/1NbWmw4dYVKjWHu6QmuPhm5SKDQQGeBOO/view?usp=sharing)
 - [RoboSub 2024 - SeaWolfVIII](https://robonation.org/app/uploads/sites/4/2024/07/RS24_TDR_NorthCarolinaState-compressed.pdf)
 - [RoboSub 2023 - SeaWolf VIII](https://robonation.org/app/uploads/sites/4/2023/06/TDR_NCSU_AquaPackRobotics_RS2023-compressed.pdf)
 - [RoboSub 2022 - SeaWolf VIII](https://robonation.org/app/uploads/sites/4/2022/06/urc-at-ncstateuniversity_TDR_RS22.pdf)
