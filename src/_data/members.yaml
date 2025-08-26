@@ -10,9 +10,9 @@ abhiPoosarla:
   leadership: true
   position: President
   teams:
+    - Admin 
     - Electrical
     - Business
-    - Admin 
   platforms:
     linkedin: https://www.linkedin.com/in/abhiram-poosarla
   info:
@@ -25,6 +25,7 @@ khangPham:
   position: Vice President
   leadership: true
   teams:
+    - Admin
     - Electrical
   platforms:
     linkedin: https://www.linkedin.com/in/khang-pham1234/
@@ -38,6 +39,7 @@ akshayPradhan:
   position: Project Manager
   leadership: true
   teams: 
+    - Admin
     - Electrical
   platforms:
     linkedin: https://www.linkedin.com/in/akshay-pradhan-518b41250/
@@ -107,6 +109,7 @@ everettBrostedt:
   position: External Treasurer
   leadership: true
   teams:
+    - Admin
     - Electrical
   platforms:
     linkedin: https://www.linkedin.com/in/everett-brostedt-978521338/
@@ -120,6 +123,7 @@ harperMartin:
   position: Internal Treasurer
   leadership: true
   teams:
+    - Admin
     - Electrical
   platforms:
     linkedin: https://www.linkedin.com/in/harper-j-martin/
@@ -133,6 +137,7 @@ arjunKuncha:
   position: Secretary
   leadership: true
   teams:
+    - Admin
     - Mechanical
   platforms:
     linkedin: https://www.linkedin.com/in/arjun-kuncha/
