@@ -34,7 +34,13 @@ top:
     url: /outreach/
 
   - text: Sponsors
-    url: /sponsors/
+    url: #
+    submenu:
+      - text: Current Sponsors
+        url: /sponsors/
+
+      - text: Sponsorship Tiers
+        url: /sponsors/tiers/
 
   - text: Blog
     url: /blog/
