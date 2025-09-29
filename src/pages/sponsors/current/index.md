@@ -2,7 +2,7 @@
 title: Sponsors
 discover:
   title: Sponsors
-permalink: /sponsors/index.html
+permalink: /sponsors/current/index.html
 description: Current sponsors
 layout: page
 ---

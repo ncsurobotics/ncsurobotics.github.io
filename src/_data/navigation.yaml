@@ -37,7 +37,7 @@ top:
     url: #
     submenu:
       - text: Current Sponsors
-        url: /sponsors/
+        url: /sponsors/current/
 
       - text: Sponsorship Tiers
         url: /sponsors/tiers/
