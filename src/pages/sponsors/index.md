@@ -13,7 +13,7 @@ To all of our donors and sponsors- thank you for investing in the future of STEM
 
 > Sponsorship Tiers
 >
-> Interested in sponsoring us? See our sponsorship tiers [here](/sponsors/tiers.html)
+> Interested in sponsoring us? See our sponsorship tiers [here](/sponsors/tiers/)
 
 
 
