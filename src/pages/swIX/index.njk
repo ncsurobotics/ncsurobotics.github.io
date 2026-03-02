@@ -1,0 +1,64 @@
+---
+title: SeaWolf IX
+discover:
+  title: SeaWolf IX
+permalink: /seawolves/seawolfIX/index.html
+layout: page
+---
+
+<!-- Import the google model view component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+<!-- Use it to show seawolfIX -->
+<model-viewer 
+  alt="3D model of Sea Wolf IX"
+  src="/assets/cad/seawolfIX.glb"
+  shadow-intensity="1"
+  camera-controls
+  auto-rotate
+  style="width: 100%; height: 300px;"
+  camera-orbit="25deg 60deg 1.5m">
+</model-viewer>
+
+<p class="text-center"><i>With 6DOF movement, a steroscopic camera, and an streamlined design, SeaWolf IX is AquaPack's newest AUV platform</i></p>
+
+<div class="grid" data-layout="thirds">
+{% image "/assets/images/swIX/swIX_front.jpg", "Front view of SeaWolf IX, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swIX/swIX_iso.jpg", "Isometric view of SeaWolf IX, the latest iteration of the SeaWolf AUV platform" %}
+{% image "/assets/images/swIX/swIX_top.jpg", "Top view of SeaWolf IX, the latest iteration of the SeaWolf AUV platform" %}
+</div>
+
+<div>
+<p>
+  The latest iteration of our vehicle, SeaWolf VIII, was created with the goal of improving platform stability and consistency to enable future development work. This iteration drew from the lessons learned from previous iterations, and focuses on simplicity and maintainability throughout the design. SWVIII's systems are divided into <b>Mechanical</b>, <b>Electrical</b>, and <b>Software</b> subgroups.
+</p>
+</div>
+
+{% set itemList = collections.SWIXElectricalDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Electrical</h2>
+      <p>SeaWolf IX's electrical system puts modularity at the forefront and can be broadly broken down into three main functions: <b>Power</b>, <b>Control</b>, and <b>Logic</b>. </p>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
+{% set itemList = collections.SWIXMechanicalDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Mechanical</h2>
+      <p>SeaWolf's Mechanical systems include a <b>multi-hull waterproofing solution</b> allowing power passthrough to it's <b>omnidirectional thrusters</b>, as well as a suite of manipulation systems including <b>ratcheting torpedo launchers</b> and a <b>ball dropper,</b> that enable SeaWolf to interact with it's environment. </p>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
+
+  {% set itemList = collections.SWIXSoftwareDetailsCollection %}
+
+  <div class="full | region">
+    <div class="wrapper flow prose">
+      <h2>Software</h2>
+      {% include 'partials/details.njk' %}
+    </div>
+  </div>
