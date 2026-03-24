@@ -42,11 +42,14 @@ top:
       - text: Sponsorship Tiers
         url: /sponsors/tiers/
 
+      - text: Sponsor Us
+        url: /sponsors/sponsorUs/ 
+
   - text: Blog
     url: /blog/
     
   - text: Search
-    url: /search/
+    url: /search/ 
 
 bottom:
   - text: Contact Us
