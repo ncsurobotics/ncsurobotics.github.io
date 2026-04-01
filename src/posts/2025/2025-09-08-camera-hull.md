@@ -8,7 +8,7 @@ credit: NA
 tags:
   - Camera
   - Mechanical Engineering
-author: sahitimudireddy
+author: sahitiMudireddy
 ---
 
 The mechanical subteam has worked very hard to improve the camera from last year and get a better version onto SWIX. Alexandria Epley machined it from 6061 aluminum on a 3-axis Mass vf2 mill.  
