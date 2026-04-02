@@ -33,7 +33,8 @@ jobs:
             - name: Install and Build
               if: github.event.action != 'closed' # We don't need the build if we know the preview will be removed
               env:
-                URL: https://ncsurobotics.github.io/preview-pr/pr-${{ github.event.number }}
+                URL: https://aquapackrobotics.org
+                PREFIX_PATH: /preview-pr/pr-${{ github.event.number }}/
               run: |
                   npm ci
                   npm run build
