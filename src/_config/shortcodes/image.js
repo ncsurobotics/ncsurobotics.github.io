@@ -10,17 +10,29 @@ const stringifyAttributes = attributeMap => {
     .join(' ');
 };
 
-export const imageShortcode = async (
-  src,
-  alt = '',
-  caption = '',
-  loading = 'lazy',
-  containerClass,
-  imageClass,
-  widths = [650, 960, 1400],
-  sizes = 'auto',
-  formats = ['avif', 'webp', 'jpeg']
-) => {
+const errorSrcRequired = shortcodeName => {
+  throw new Error(`src parameter is required for {% ${shortcodeName} %} shortcode`);
+};
+
+// Handles image processing
+const processImage = async options => {
+  let {
+    src,
+    alt = '',
+    caption = '',
+    loading = 'lazy',
+    containerClass,
+    imageClass,
+    widths = [650, 960, 1400],
+    sizes,
+    formats = ['avif', 'webp', 'jpeg']
+  } = options;
+
+  // Set sizes based on loading (if not provided)
+  if (sizes == null) {
+    sizes = loading === 'lazy' ? 'auto' : '100vw';
+  }
+  
   // Prepend "./src" if not present
   if (!src.startsWith('./src')) {
     src = `./src${src}`;
@@ -64,4 +76,40 @@ export const imageShortcode = async (
   return caption
     ? `<figure slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${pictureElement}<figcaption>${caption}</figcaption></figure>`
     : `<picture slot="image"${containerClass ? ` class="${containerClass}"` : ''}>${imageSources}<img ${imageAttributes}></picture>`;
+};
+
+// Positional parameters (legacy)
+export const imageShortcode = async (
+  src,
+  alt,
+  caption,
+  loading,
+  containerClass,
+  imageClass,
+  widths,
+  sizes,
+  formats
+) => {
+  if (!src) {
+    errorSrcRequired('image');
+  }
+  return processImage({
+    src,
+    alt,
+    caption,
+    loading,
+    containerClass,
+    imageClass,
+    widths,
+    sizes,
+    formats
+  });
+};
+
+// Named parameters
+export const imageKeysShortcode = async (options = {}) => {
+  if (!options.src) {
+    errorSrcRequired('imageKeys');
+  }
+  return processImage(options);
 };
