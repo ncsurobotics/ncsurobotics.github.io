@@ -1,5 +1,5 @@
 #homepage-splash {
-  background: url("/assets/images/static/homepage-splash.jpg") no-repeat center center scroll;
+  background: url({{"/assets/images/static/homepage-splash.jpg" | url}}) no-repeat center center scroll;
   background-size: cover;
 }
 
@@ -41,7 +41,7 @@
   display: flex;
   flex-flow: column;
   flex: 1 1 auto;
-  background: url("/assets/images/static/homepage-splash.jpg") no-repeat center center scroll;
+  background: url({{"/assets/images/static/homepage-splash.jpg" | url}}) no-repeat center center scroll;
   background-size: cover;
 }
 

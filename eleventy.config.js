@@ -48,6 +48,7 @@ export default async function (eleventyConfig) {
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
+  eleventyConfig.addPlugin(plugins.HtmlBasePlugin);
   eleventyConfig.addPlugin(plugins.drafts);
 
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
@@ -144,6 +145,8 @@ export default async function (eleventyConfig) {
       input: 'src',
       includes: '_includes',
       layouts: '_layouts'
-    }
+    },
+
+    pathPrefix: process.env.PATH_PREFIX || '/'
   };
 }
