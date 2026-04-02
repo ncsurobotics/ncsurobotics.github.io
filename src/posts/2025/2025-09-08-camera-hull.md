@@ -21,7 +21,7 @@ The largest improvement from the old camera to the new camera is the use of an o
 
 
 {% set alt = "SW VIII before the camera update" %}
-{% image "/assets/images/seawolves/seaWolfVIII.jpg", alt, alt %}
+{% image "/assets/images/seawolves/seaWolfVIII.png", alt, alt %}
  
 
 
