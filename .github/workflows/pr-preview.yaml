@@ -21,7 +21,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v4
               with:
-                node-version: '20.x'
+                node-version: '25.x'
                 cache: 'npm'
 
             - name: Persist Eleventy .cache
@@ -33,7 +33,7 @@ jobs:
             - name: Install and Build
               if: github.event.action != 'closed' # We don't need the build if we know the preview will be removed
               env:
-                URL: https://aquapackrobotics.org
+                URL: https://ncsurobotics.github.io/preview-pr/pr-${{ github.event.number }}
               run: |
                   npm ci
                   npm run build
