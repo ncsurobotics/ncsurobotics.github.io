@@ -44,11 +44,3 @@
   background: url({{"/assets/images/static/homepage-splash.jpg" | url}}) no-repeat center center scroll;
   background-size: cover;
 }
-
-.about-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-height: 75vh;
-  width: auto;
-}
