@@ -37,7 +37,7 @@ jobs:
               if: github.event.action != 'closed' # We don't need the build if we know the preview will be removed
               env:
                 URL: https://aquapackrobotics.org
-                PATH_PREFIX: /preview-pr/pr-${{ github.event.number }}/
+                PATH_PREFIX: /pr-preview/pr-${{ github.event.number }}/
               run: |
                   npm ci
                   npm run build
