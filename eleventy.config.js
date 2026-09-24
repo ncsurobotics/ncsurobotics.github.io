@@ -63,7 +63,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     // Keep transformed images together so CI can restore their disk cache.
     urlPath: '/img/',
-    formats: ['webp', 'jpeg', 'png'],
+    // Use the source format as fallback instead of generating PNGs for JPEG photos.
+    formats: ['webp', 'auto'],
     widths: ['auto'],
     htmlOptions: {
       imgAttributes: {
