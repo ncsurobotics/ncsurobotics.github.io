@@ -27,20 +27,31 @@ jobs:
                 node-version: '25.x'
                 cache: 'npm'
 
-            - name: Persist Eleventy .cache
+            - name: Install and clean
+              if: github.event.action != 'closed'
+              run: |
+                  npm ci
+                  npm run clean
+
+            - name: Cache Eleventy images
+              if: github.event.action != 'closed'
               uses: actions/cache@v4
               with:
-                path: ./.cache
-                key: ${{ runner.os }}-eleventy-fetch-cache
+                path: |
+                  .cache
+                  dist/assets/images
+                  dist/img
+                key: ${{ runner.os }}-eleventy-images-v1-${{ hashFiles('package-lock.json', 'eleventy.config.js', 'src/_config/shortcodes/image.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
+                restore-keys: |
+                  ${{ runner.os }}-eleventy-images-v1-${{ hashFiles('package-lock.json', 'eleventy.config.js', 'src/_config/shortcodes/image.js') }}-
 
-            - name: Install and Build
+            - name: Build
               if: github.event.action != 'closed' # We don't need the build if we know the preview will be removed
               env:
                 URL: https://aquapackrobotics.org
                 PATH_PREFIX: /pr-preview/pr-${{ github.event.number }}/
-              run: |
-                  npm ci
-                  npm run build
+              # Cleaning must happen before restoring the processed images.
+              run: npm run build:11ty
 
             - name: Deploy preview
               uses: rossjrw/pr-preview-action@v1

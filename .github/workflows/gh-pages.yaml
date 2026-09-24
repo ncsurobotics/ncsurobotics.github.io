@@ -28,18 +28,26 @@ jobs:
           node-version: '25.x'
           cache: 'npm'
 
-      - name: Persist Eleventy .cache
+      - run: npm ci
+
+      - run: npm run clean
+
+      - name: Cache Eleventy images
         uses: actions/cache@v4
         with:
-          path: ./.cache
-          key: ${{ runner.os }}-eleventy-fetch-cache
-
-      - run: npm ci
+          path: |
+            .cache
+            dist/assets/images
+            dist/img
+          key: ${{ runner.os }}-eleventy-images-v1-${{ hashFiles('package-lock.json', 'eleventy.config.js', 'src/_config/shortcodes/image.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            ${{ runner.os }}-eleventy-images-v1-${{ hashFiles('package-lock.json', 'eleventy.config.js', 'src/_config/shortcodes/image.js') }}-
 
       - name: Build
         env:
           URL: https://aquapackrobotics.org
-        run: npm run build
+        # Cleaning must happen before restoring the processed images.
+        run: npm run build:11ty
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

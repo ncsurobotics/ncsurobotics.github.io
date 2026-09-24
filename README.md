@@ -26,6 +26,15 @@ npm run build
 > [!IMPORTANT]
 > A production build is automatically deployed when changes are pushed to Github, you should never need to do this.
 
+GitHub Actions caches downloaded assets (`.cache`) and processed images
+(`dist/assets/images` and `dist/img`) for production and PR preview builds.
+CI cleans first, restores the cache, then runs `npm run build:11ty` so the
+restored images survive. Hashed image filenames let Eleventy reuse unchanged
+images while regenerating changed ones. Each successful run saves an updated
+cache; dependency or image configuration changes start a fresh cache. The first
+build after a cache miss still processes all images. Bump `eleventy-images-v1`
+in both workflows to manually invalidate the cache.
+
 ### Generating favicons
 This command will auto generate the favicons in `src/assets/images/favicon` using `src/assets/svg/misc/logo.svg`.
 ```bash

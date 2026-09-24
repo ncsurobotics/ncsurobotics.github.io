@@ -46,7 +46,7 @@ const processImage = async options => {
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
-      return `${name}-${width}w.${format}`;
+      return `${name}-${id}-${width}w.${format}`;
     }
   });
 

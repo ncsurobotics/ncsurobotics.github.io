@@ -61,6 +61,8 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
+    // Keep transformed images together so CI can restore their disk cache.
+    urlPath: '/img/',
     formats: ['webp', 'jpeg', 'png'],
     widths: ['auto'],
     htmlOptions: {
