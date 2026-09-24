@@ -1,11 +1,13 @@
 ---
-title: Technical Design Reports
+title: Papers
 discover:
-  title: Technical Design Reports
-permalink: /tdrs/index.html
-description: Technical Design Reports
+  title: Papers
+permalink: /papers/index.html
+description: Papers
 layout: page
 ---
+
+## Technical Design Reports
 
 <blockquote class="flow">
         <p>Effective documentation is essential for any organization, and AquaPack is no exception. By maintaining documentation on the how and why of SeaWolf's systems, we enable new members to quickly familiarize themselves with our robots, and enable experience members to draw on past idea's and more effectively troubleshoot errors.*</p>
