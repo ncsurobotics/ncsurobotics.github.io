@@ -54,7 +54,7 @@ We're a 501(c)(3) non-profit. You can receive tax write-offs by sponsoring us.
   
   <p>You can donate directly to us without any fees via the Paypal giving charity. </p> 
   <ul>
-  <li><p> <strong>Pay by visiting the link:</strong> <a href="https://aquapackrobotics.org" target = "_blank" >https://aquapackrobotics.org</a> </p> </li>
+  <li><p> <strong>Pay by visiting the link:</strong> <a href="https://paypal.com/fundraiser/charity/4619339" target = "_blank" >Aquapack Paypal</a> </p> </li>
   <li>You can also search for us on Paypal's Charity page with the name AquaPack Robotics </li>
   <li><strong>Ensure our donation page has the Employer Identification Number (EIN) 46-5609898</strong></li> </ul>
 	</div>
